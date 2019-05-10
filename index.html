@@ -2,11 +2,126 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Магазин мороженого "Глейси"</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип магазина «Глейси»">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="price.html">Доставка и оплата</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="info.html">О компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="login-link">Поиск</li>
+          <li class="login-link">Вход</li>
+          <li class="login-link">Пусто</li>
+          <!--Здесь должна быть ссылка или форма на корзину-->
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
+      <!--
+      <section class="gallery">
+        <h2>Фотогалерея</h2>
+        <figure class="gallery-content">
+          <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
+        </figure>
+        <span class="button gallery-button gallery-button-back">Назад</span>
+        <span class="button gallery-button gallery-button-next">Вперед</span>
+      </section>
+    -->
 
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features-list">
+          <h3>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+
+          <li class="feature-item">
+            <p>Всё наше мороженое...</p>
+          </li>
+          <li class="feature-item">
+            <p>ДЛя приготовления мороженого...</p>
+          </li>
+          <li class="feature-item">
+            <p>Закупка ингридиентов...</p>
+          </li>
+          <li class="feature-item">
+            <p>Доставка нашего мороженого...</p>
+          </li>
+        </ul>
+      </section>
+
+      <article class="news">
+        <h2>Новое в нашем блоге</h2>
+        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      </article>
+
+      <section class="subscription">
+        <h2>Подпишитесь на нашу сладкую рассылку..</h2>
+        <p class="subscription-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <!-- Здесь будет форма -->
+      </section>
+
+
+
+      <!--
+       <section class="contacts">
+        <h2>Адрес главного офиса и офлайн-магазина</h2>
+        <p>
+          ул. Большая Конюшенная<br>
+          19/8, Санкт-Петербург<br>
+          Для заказов по телефону:<br>
+           8 812 450-25-25<br>
+           (с 10 до 20 ежедневно)
+        </p>
+        <a href="map.html">Как нас найти?</a><br>
+        <a class="button" href="contacts.html">Форма обратной связи</a>
+      </section>
+    -->
+    </main>
+    <footer class="main-footer">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твитер</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">ВКонтакте</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-info">
+        <ul>
+        <li><a class="info-button" href="#">Для поставщиков</a></li><br>
+        <li><a class="info-button" href="#">О производстве</a></li><br>
+        <li><a class="info-button" href="#">Наши документы</a></li><br>
+        <li><a class="info-button" href="#">Экологические стандарты</a></li>
+      </ul>
+    </div>
+
+      <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
+
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
+<!--форма для Корзины
+    <section class="modal modal-busket">
+      <h2>Пусто</h2>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
+  -->
   </body>
 </html>
