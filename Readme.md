@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анастасия](https://up.htmlacademy.ru/htmlcss/25/user/1019201).
-* Студент: [Марина Садуллаева](https://htmlacademy.ru/profile/id504763).
+* Наставник: [Марина Садуллаева](https://htmlacademy.ru/profile/id504763).
 
 
 ---
