@@ -30,11 +30,11 @@
         <li><a href="info.html">О компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="user-search">Поиск</li>
-        <section class="modal modal-user-search">
+        <li class="search">Поиск</li>
+        <section class="modal modal-search">
           <form action="https://#" method="get">
-            <label class="visually-hidden" for="user-login">Что ищем?</label>
-            <input type="text" name="search" value="" placeholder="Что ищем?">
+            <label class="visually-hidden" for="search-form">Что ищем?</label>
+            <input id="search-form" type="text" name="search" value="" placeholder="Что ищем?">
           </form>
         </section>
 
@@ -95,15 +95,11 @@
           <span class="catalog-category">Крем-брюле и пломбир с малиновым джемом</span>
         </h3>
       </figure>
-      <ul class="pagination-list">
-        <!--смену фона прописываем здесь или CSS или JS?-->
-        <li class="pagination-item">1</li>
-        <li class="pagination-item pagination-item-current">2</li>
-        <li class="pagination-item">3</li>
-      </ul>
+      <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+      <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
       <form action="https://#" method="post">
         <input type="hidden" name="amount" value="2">
-        <!--непонятна логистика добавления товара в корзину-->
+        <!-- логистика добавления товара в корзину?-->
         <button class="button" type="submit">
           Давайте оба!
         </button>
@@ -115,7 +111,6 @@
       <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
       <form action="https://#" method="post">
         <input type="hidden" name="amount" value="2">
-        <!--непонятна логистика добавления товара в корзину-->
         <button class="button" type="submit">
           Хочу варенье!
         </button>
@@ -128,7 +123,6 @@
       </p>
       <form action="https://#" method="post">
         <input type="hidden" name="amount" value="2">
-        <!--непонятна логистика добавления товара в корзину-->
         <button class="button" type="submit">
           Хочу шоколадки!
         </button>
@@ -140,7 +134,7 @@
         <li class="catalog-hits-item">
           <p class="catalog-hits-item-image">
             <a href="#">
-              <img src="img/index/hit-product-1.jpg" width="267" height="267"
+              <img src="img/index/hit-product-1.jpg" width="100" height="100"
                 alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </a>
           </p>
@@ -157,7 +151,7 @@
         <li class="catalog-hits-item">
           <p class="catalog-hits-item-image">
             <a href="#">
-              <img src="img/index/hit-product-2.jpg" width="267" height="267"
+              <img src="img/index/hit-product-2.jpg" width="100" height="100"
                 alt="Сливочно-кофейное с кусочками шоколада">
             </a>
           </p>
@@ -174,7 +168,7 @@
         <li class="catalog-hits-item">
           <p class="catalog-hits-item-image">
             <a href="#">
-              <img src="img/index/hit-product-3.jpg" width="267" height="267"
+              <img src="img/index/hit-product-3.jpg" width="100" height="100"
                 alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </a>
           </p>
@@ -191,7 +185,7 @@
         <li class="catalog-hits-item">
           <p class="catalog-hits-item-image">
             <a href="#">
-              <img src="img/index/hit-product-4.jpg" width="267" height="267"
+              <img src="img/index/hit-product-4.jpg" width="100" height="100"
                 alt="Сливочное крем-брюле с карамельной подливкой">
             </a>
           </p>
@@ -244,7 +238,8 @@
         что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
       <form action="https://#" method="post">
         <p>
-          <input class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
+          <label class="visually-hidden" for="user-login">Электронная почта</label>
+          <input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
         </p>
         <button class="button" type="submit">
           Отправить
@@ -280,16 +275,16 @@
         <p>Мы обязательно Вам ответим!</p>
         </p>
         <p>
-          <label class="visually-hidden" for="user-login">Как Вас зовут?</label>
-          <input class="user-name" type="text" name="name" placeholder="Как Вас зовут?">
+          <label class="visually-hidden" for="user-first-name">Как Вас зовут?</label>
+          <input id="user-first-name" class="user-name" type="text" name="name" placeholder="Как Вас зовут?">
         </p>
         <p>
-          <label class="visually-hidden" for="user-login">Ваша почта для ответа?</label>
-          <input class="user-mail" type="text" name="mail" placeholder="Ваша почта для ответа?">
+          <label class="visually-hidden" for="user-email">Ваша почта для ответа?</label>
+          <input id="user-email" class="user-mail" type="text" name="mail" placeholder="Ваша почта для ответа?">
         </p>
         <p>
-          <label class="visually-hidden" for="user-login">Напишите что-нибудь</label>
-          <input class="feedback-text" type="text" name="feedback" placeholder="Напишите что-нибудь...">
+          <label class="visually-hidden" for="user-feedback">Напишите что-нибудь</label>
+          <input id="user-feedback" class="feedback-text" type="text" name="feedback" placeholder="Напишите что-нибудь...">
         </p>
         <button class="button" type="submit">
           Отправить
