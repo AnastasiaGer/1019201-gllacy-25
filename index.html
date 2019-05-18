@@ -14,16 +14,45 @@
       </a>
       <ul class="site-navigation">
         <li>Каталог</li>
-        <!--Здесь должен быть попап-->
+
+        <select name="categories-ice-cream">
+          <option value="new">Новинки</option>
+          <option value="creamy">Сливочное</option>
+          <option value="sorbet">Щербеты</option>
+          <option value="fruit-ice">Фруктовый лед</option>
+          <option value="melorin">Мелорин</option>
+        </select>
+
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="info.html">О компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="login-link">Поиск</li>
-        <!--Здесь должна быть форма поиска-->
+        <li class="user-search">Поиск</li>
+        <form action="https://#" method="get">
+          <input type="text" name="search" value="" placeholder="Что ищем?">
+        </form>
+
         <li class="login-link">Вход</li>
-        <!--Здесь должна быть форма входа-->
-        <li class="login-link">Пусто</li>
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <form class="login-form" action="https://#" method="post">
+          <p>
+            <input class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
+          </p>
+          <p>
+            <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <p>
+            <a class="restore" href="#">Забыли пароль?</a>
+          </p>
+          <p>
+            <a class="registration" href="#">Новая регистрация</a>
+          </p>
+          <button class="button" type="submit">
+            Войти
+          </button>
+        </form>
+
+        <li class="busket">Пусто</li>
         <!--Здесь должен быть попап-->
       </ul>
     </nav>
@@ -40,16 +69,128 @@
   <main class="container">
 
     <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
-    <!--
-      <section class="gallery">
-        <h2>Фотогалерея</h2>
-        <figure class="gallery-content">
-          <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
-        </figure>
-        <span class="button gallery-button gallery-button-back">Назад</span>
-        <span class="button gallery-button gallery-button-next">Вперед</span>
-      </section>
-    -->
+
+    <section class="gallery">
+      <h2 class="visually-hidden">Фотогалерея</h2>
+      <figure class="gallery-content">
+        <img src="img/index/1ice-creams.png" width="333" height="319" alt="Крем-брюле и пломбир
+с малиновым джемом">
+        <h3>
+          <span class="catalog-category">Крем-брюле и пломбир с малиновым джемом</span>
+        </h3>
+      </figure>
+      <ul class="pagination-list">
+        <!--смену фона прописываем здесь или CSS или JS?-->
+        <li class="pagination-item">1</li>
+        <li class="pagination-item pagination-item-current">2</li>
+        <li class="pagination-item">3</li>
+      </ul>
+      <form action="https://#" method="post">
+        <input type="hidden" name="amount" value="2">
+        <!--непонятна логистика добавления товара в корзину-->
+        <button class="button" type="submit">
+          Давайте оба!
+        </button>
+    </section>
+
+    <section class="specials">
+      <h2 class="visually-hidden">Спецпредложения</h2>
+      <h3>Малинка даром!</h3>
+      <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+      <form action="https://#" method="post">
+        <input type="hidden" name="amount" value="2">
+        <!--непонятна логистика добавления товара в корзину-->
+        <button class="button" type="submit">
+          Хочу варенье!
+        </button>
+    </section>
+
+    <section class="specials">
+      <h2 class="visually-hidden">Спецпредложения</h2>
+      <h3>Шоколадки даром!</h3>
+      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+      </p>
+      <form action="https://#" method="post">
+        <input type="hidden" name="amount" value="2">
+        <!--непонятна логистика добавления товара в корзину-->
+        <button class="button" type="submit">
+          Хочу шоколадки!
+        </button>
+    </section>
+
+    <section class="catalog-hits">
+        <h2 class="visually-hidden">Хиты продаж</h2>
+      <ul class="catalog-hits-list">
+        <li class="catalog-hits-item">
+          <p class="catalog-hits-item-image">
+            <a href="#">
+              <img src="img/index/hit-product-1.jpg" width="267" height="267"
+                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </a>
+          </p>
+          <p class="catalog-hits-item-price">
+            <b>310₽</b>
+            <b class="weight">кг</b>
+          </p>
+          <h3>
+            <a href="#">
+              <span class="catalog-hits-category">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+            </a>
+          </h3>
+        </li>
+        <li class="catalog-hits-item">
+          <p class="catalog-hits-item-image">
+            <a href="#">
+              <img src="img/index/hit-product-2.jpg" width="267" height="267"
+                alt="Сливочно-кофейное с кусочками шоколада">
+            </a>
+          </p>
+          <p class="catalog-hits-item-price">
+            <b>380₽</b>
+            <b class="weight">кг</b>
+          </p>
+          <h3>
+            <a href="#">
+              <span class="catalog-hits-category">Сливочно-кофейное с кусочками шоколада</span>
+            </a>
+          </h3>
+        </li>
+        <li class="catalog-hits-item">
+          <p class="catalog-hits-item-image">
+            <a href="#">
+              <img src="img/index/hit-product-3.jpg" width="267" height="267"
+                alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            </a>
+          </p>
+          <p class="catalog-hits-item-price">
+            <b>355₽</b>
+            <b class="weight">кг</b>
+          </p>
+          <h3>
+            <a href="#">
+              <span class="catalog-hits-category">Сливочно-клубничное с присыпкой из белого шоколада</span>
+            </a>
+          </h3>
+        </li>
+        <li class="catalog-hits-item">
+          <p class="catalog-hits-item-image">
+            <a href="#">
+              <img src="img/index/hit-product-4.jpg" width="267" height="267"
+                alt="Сливочное крем-брюле с карамельной подливкой">
+            </a>
+          </p>
+          <p class="catalog-hits-item-price">
+            <b>415₽</b>
+            <b class="weight">кг</b>
+          </p>
+          <h3>
+            <a href="#">
+              <span class="catalog-hits-category">Сливочное крем-брюле с карамельной подливкой</span>
+            </a>
+          </h3>
+        </li>
+      </ul>
+    </section>
 
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -82,25 +223,55 @@
     </article>
 
     <section class="subscription">
+      <h2 class="visually-hidden">Подписка на новости</h2>
       <p class="subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
         что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-      <!-- Здесь будет форма -->
+      <form action="https://#" method="post">
+        <p>
+          <input class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
+        </p>
+        <button class="button" type="submit">
+          Отправить
+      </form>
     </section>
 
-    <!--
-       <section class="contacts">
-        <h2>Адрес главного офиса и офлайн-магазина</h2>
-        <p>
-          ул. Большая Конюшенная<br>
-          19/8, Санкт-Петербург<br>
-          Для заказов по телефону:<br>
-           8 812 450-25-25<br>
-           (с 10 до 20 ежедневно)
+
+    <!-- <section class="map">
+        <a href="map.html"></a>
+ </section>
+      -->
+
+    <section class="contacts">
+      <h2>Адрес главного офиса и офлайн-магазина</h2>
+      <p>
+        ул. Большая Конюшенная<br>
+        19/8, Санкт-Петербург<br>
+        Для заказов по телефону:<br>
+        8 812 450-25-25<br>
+        (с 10 до 20 ежедневно)
+      </p>
+      <button class="button" type="submit">
+        Форма обратной связи
+      </button>
+
+      <form class="feedback-form" action="https://#" method="post">
+        <p>Мы обязательно Вам ответим!</p>
         </p>
-        <a href="map.html">Как нас найти?</a><br>
-        <a class="button" href="contacts.html">Форма обратной связи</a>
-      </section>
-    -->
+        <p>
+          <input class="user-name" type="text" name="name" placeholder="Как Вас зовут?">
+        </p>
+        <p>
+          <input class="user-mail" type="text" name="mail" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <input class="feedback-text" type="text" name="feedback" placeholder="Напишите что-нибудь...">
+        </p>
+        <button class="button" type="submit">
+          Отправить
+        </button>
+      </form>
+    </section>
+
   </main>
   <footer class="main-footer">
     <div class="footer-social">
