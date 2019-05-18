@@ -14,91 +14,110 @@
       </a>
       <ul class="site-navigation">
 
-        <li class="site-navigation-current">Каталог</li>
+        <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
+
+        <section class="modal modal-categories-ice-cream"></section>
         <select name="categories-ice-cream">
-            <option value="new">Новинки</option>
-            <option value="creamy">Сливочное</option>
-            <option value="sorbet">Щербеты</option>
-            <option value="fruit-ice">Фруктовый лед</option>
-            <option value="melorin">Мелорин</option>
-          </select>
+          <option value="new">Новинки</option>
+          <option value="creamy">Сливочное</option>
+          <option value="sorbet">Щербеты</option>
+          <option value="fruit-ice">Фруктовый лед</option>
+          <option value="melorin">Мелорин</option>
+        </select>
+        </section>
 
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="info.html">О компании</a></li>
       </ul>
       <ul class="user-navigation">
         <li class="user-search">Поиск</li>
-        <form action="https://#" method="get">
-          <input type="text" name="search" value="" placeholder="Что ищем?">
-        </form>
-        
-        <li class="login-link">Вход</li>
-        <h2 class="visually-hidden">Личный кабинет</h2>
-        <form class="login-form" action="https://#" method="post">
-          <p>
-            <input class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
-          </p>
-          <p>
-            <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-          </p>
-          <p>
-            <a class="restore" href="#">Забыли пароль?</a>
-          </p>
-          <p>
-            <a class="registration" href="#">Новая регистрация</a>
-          </p>
-          <button class="button" type="submit">
-            Войти
-          </button>
-        </form>
+        <section class="modal modal-user-search">
+          <form action="https://#" method="get">
+            <label class="visually-hidden" for="user-login">Что ищем?</label>
+            <input type="text" name="search" value="" placeholder="Что ищем?">
+          </form>
+        </section>
 
-        <li class="busket">2 товара</li>
-        <h3 class="visually-hidden">Товары в корзине</h1>
-          <form class="busket-form" action="https://#" method="post"> 
-          <table cellspacing="5">
-            <tr class="row">
-              <td class="visually-hidden">Удалить товар из корзины</td>
-              <td class="visually-hidden">Изображение товара</td>   
-              <td class="visually-hidden">Название товара</td>  
-              <td class="visually-hidden">Цена за килограмм</td>     
-              <td class="visually-hidden">Общая стоимость товара</td>
-              </tr>
-              <tr class="row">
-              <td class="col-1">  
-                <img class="" src="img/catalog/cross-small.svg" width="5" height="5"
-              alt="Удалить товар из корзины">
-              </td>
-              <td class="col-2">   
-                  <img class="" src="img/catalog/product-1.jpg" width="10" height="10"
-                  alt="Удалить товар из корзины">
-
-              </td>   
-              <td class="col-3">Пломбир с апельсиновым джемом</td>  
-              <td class="col-4">1,5 кг х 200 руб.</td>     
-              <td class="col-5">300 руб.</td>
-              </tr>
-              <tr class="row">
-              <td class="col-1">  
-                  <img class="" src="img/catalog/cross-small.svg" width="5" height="5"
-              alt="Удалить товар из корзины">  
-              </td>
-              <td class="col-2">
-                  <img class="" src="img/catalog/product-3.jpg" width="10" height="10"
-                  alt="Удалить товар из корзины">
-              </td>   
-              <td class="col-3">Клубничный пломбир с присыпкой из белого шоколада</td>  
-              <td class="col-4">1,5 кг х 300 руб.</td>     
-              <td class="col-5">450 руб.</td>
-              </tr>
-              <tr class="row">
-              <td class="col-1" colspan=«4»>Итого:</td>    
-              <td class="col-5">750 руб.</td>
-              </tr>
-          </table> 
-          <button class="button" type="submit">
-              Оформить заказ
+        <li class="login-link">
+          <a class="login-link" href="login.html">
+            Вход
+          </a>
+        </li>
+        <!--Форму Входа прописывать здесь или в main?-->
+        <section class="modal modal-login">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <form class="login-form" action="https://#" method="post">
+            <p>
+              <label class="visually-hidden" for="user-login">Электронная почта</label>
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
+            </p>
+            <p>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="login-icon-password" id="user-password" type="password" name="password"
+                placeholder="Пароль">
+            </p>
+            <p>
+              <a class="restore" href="#">Забыли пароль?</a>
+            </p>
+            <p>
+              <a class="registration" href="#">Новая регистрация</a>
+            </p>
+            <button class="button" type="submit">
+              Войти
             </button>
           </form>
+        </section>
+
+        <li class="busket">
+          <a class="busket-link" href="busket.html">
+            2 товара
+          </a>
+        </li>
+
+        <section class="modal modal-busket">
+          <h3 class="visually-hidden">Товары в корзине</h3>
+            <form class="busket-form" action="https://#" method="post">
+              <table cellspacing="5">
+                <tr class="row">
+                  <td class="visually-hidden">Удалить товар из корзины</td>
+                  <td class="visually-hidden">Изображение товара</td>
+                  <td class="visually-hidden">Название товара</td>
+                  <td class="visually-hidden">Цена за килограмм</td>
+                  <td class="visually-hidden">Общая стоимость товара</td>
+                </tr>
+                <tr class="row">
+                  <td class="col-1">
+                    <img class="" src="img/catalog/cross-small.svg" width="5" height="5" alt="Удалить товар из корзины">
+                  </td>
+                  <td class="col-2">
+                    <img class="" src="img/catalog/product-1.jpg" width="10" height="10" alt="Удалить товар из корзины">
+
+                  </td>
+                  <td class="col-3">Пломбир с апельсиновым джемом</td>
+                  <td class="col-4">1,5 кг х 200 руб.</td>
+                  <td class="col-5">300 руб.</td>
+                </tr>
+                <tr class="row">
+                  <td class="col-1">
+                    <img class="" src="img/catalog/cross-small.svg" width="5" height="5" alt="Удалить товар из корзины">
+                  </td>
+                  <td class="col-2">
+                    <img class="" src="img/catalog/product-3.jpg" width="10" height="10" alt="Удалить товар из корзины">
+                  </td>
+                  <td class="col-3">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="col-4">1,5 кг х 300 руб.</td>
+                  <td class="col-5">450 руб.</td>
+                </tr>
+                <tr class="row">
+                  <td class="col-1" colspan=«4»>Итого:</td>
+                  <td class="col-5">750 руб.</td>
+                </tr>
+              </table>
+              <button class="button" type="submit"> <!--Кнопка должна уводить на страницу заказа?-->
+                Оформить заказ
+              </button>
+            </form>
+        </section>
       </ul>
     </nav>
     <section>
@@ -121,7 +140,7 @@
     <h1 class="page-title">Сливочное мороженое</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
+      <!-- Здесь будет фильтр -->
     </section>
 
     <section class="catalog">

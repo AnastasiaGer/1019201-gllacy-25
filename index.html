@@ -12,48 +12,64 @@
       <a class="main-header-logo">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип маганзина мороженого «Глейси»">
       </a>
-      <ul class="site-navigation">
-        <li>Каталог</li>
+      <ul class="site-navigation"> 
 
-        <select name="categories-ice-cream">
-          <option value="new">Новинки</option>
-          <option value="creamy">Сливочное</option>
-          <option value="sorbet">Щербеты</option>
-          <option value="fruit-ice">Фруктовый лед</option>
-          <option value="melorin">Мелорин</option>
-        </select>
+        <li><a href="catalog.html">Каталог</a></li>
+
+        <section class="modal modal-categories-ice-cream">
+          <select name="categories-ice-cream">
+            <option value="new">Новинки</option>
+            <option value="creamy">Сливочное</option>
+            <option value="sorbet">Щербеты</option>
+            <option value="fruit-ice">Фруктовый лед</option>
+            <option value="melorin">Мелорин</option>
+          </select>
+        </section>
 
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="info.html">О компании</a></li>
       </ul>
       <ul class="user-navigation">
         <li class="user-search">Поиск</li>
-        <form action="https://#" method="get">
-          <input type="text" name="search" value="" placeholder="Что ищем?">
-        </form>
+        <section class="modal modal-user-search">
+          <form action="https://#" method="get">
+            <label class="visually-hidden" for="user-login">Что ищем?</label>
+            <input type="text" name="search" value="" placeholder="Что ищем?">
+          </form>
+        </section>
 
-        <li class="login-link">Вход</li>
-        <h2 class="visually-hidden">Личный кабинет</h2>
-        <form class="login-form" action="https://#" method="post">
-          <p>
-            <input class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
-          </p>
-          <p>
-            <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-          </p>
-          <p>
-            <a class="restore" href="#">Забыли пароль?</a>
-          </p>
-          <p>
-            <a class="registration" href="#">Новая регистрация</a>
-          </p>
-          <button class="button" type="submit">
-            Войти
-          </button>
-        </form>
+        <li class="login-link">
+          <a class="login-link" href="login.html">
+            Вход
+          </a>
+        </li>
+        <!--Форму Входа прописывать здесь или в main?-->
+        <section class="modal modal-login">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <form class="login-form" action="https://#" method="post">
+            <p>
+              <label class="visually-hidden" for="user-login">Электронная почта</label>
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
+            </p>
+            <p>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="login-icon-password" id="user-password" type="password" name="password"
+                placeholder="Пароль">
+            </p>
+            <p>
+              <a class="restore" href="#">Забыли пароль?</a>
+            </p>
+            <p>
+              <a class="registration" href="#">Новая регистрация</a>
+            </p>
+            <button class="button" type="submit">
+              Войти
+            </button>
+          </form>
+        </section>
 
         <li class="busket">Пусто</li>
-        <!--Здесь должен быть попап-->
+        <!--Здесь должен быть попап?-->
       </ul>
     </nav>
     <section>
@@ -119,7 +135,7 @@
     </section>
 
     <section class="catalog-hits">
-        <h2 class="visually-hidden">Хиты продаж</h2>
+      <h2 class="visually-hidden">Хиты продаж</h2>
       <ul class="catalog-hits-list">
         <li class="catalog-hits-item">
           <p class="catalog-hits-item-image">
@@ -235,11 +251,15 @@
       </form>
     </section>
 
-
-    <!-- <section class="map">
-        <a href="map.html"></a>
- </section>
-      -->
+    <section class="map">
+      <h2 class="visually-hidden">
+        Как до нас добраться
+      </h2>
+      <p>
+        <img src="img/index/map.png" width="780" height="300"
+          alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+    </section>
 
     <section class="contacts">
       <h2>Адрес главного офиса и офлайн-магазина</h2>
@@ -253,17 +273,22 @@
       <button class="button" type="submit">
         Форма обратной связи
       </button>
+    </section>
 
+    <section class="modal modal-feedback">
       <form class="feedback-form" action="https://#" method="post">
         <p>Мы обязательно Вам ответим!</p>
         </p>
         <p>
+          <label class="visually-hidden" for="user-login">Как Вас зовут?</label>
           <input class="user-name" type="text" name="name" placeholder="Как Вас зовут?">
         </p>
         <p>
+          <label class="visually-hidden" for="user-login">Ваша почта для ответа?</label>
           <input class="user-mail" type="text" name="mail" placeholder="Ваша почта для ответа?">
         </p>
         <p>
+          <label class="visually-hidden" for="user-login">Напишите что-нибудь</label>
           <input class="feedback-text" type="text" name="feedback" placeholder="Напишите что-нибудь...">
         </p>
         <button class="button" type="submit">
