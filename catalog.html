@@ -16,15 +16,15 @@
 
         <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
 
-        <section class="modal modal-categories-ice-cream"></section>
-        <select name="categories-ice-cream">
-          <option value="new">Новинки</option>
-          <option value="creamy">Сливочное</option>
-          <option value="sorbet">Щербеты</option>
-          <option value="fruit-ice">Фруктовый лед</option>
-          <option value="melorin">Мелорин</option>
-        </select>
-        </section>
+        <section class="modal modal-categories-ice-cream">
+            <ul>
+              <li class="new"><a href="#">Новинки</a></li>
+              <li class="creamy"><a href="catalog.html">Сливочное</a></li>
+              <li class="sorbet"><a href="#">Щербеты</a></li>
+              <li class="fruit-ice"><a href="#">Фруктовый лед</a></li>
+              <li class="melorin"><a href="#">Мелорин</a></li>
+            </ul>
+          </section>
 
         <li><a href="delivery.html">Доставка и оплата</a></li>
         <li><a href="info.html">О компании</a></li>
@@ -87,7 +87,7 @@
               </tr>
               <tr class="row">
                 <td class="col-1">
-                  <img class="" src="img/catalog/cross-small.svg" width="5" height="5" alt="Удалить товар из корзины">
+                    <input type="image" src="img/catalog/cross-small.svg" width="5" height="5" alt="Удалить товар из корзины">
                 </td>
                 <td class="col-2">
                   <img class="" src="img/catalog/product-1.jpg" width="10" height="10" alt="Удалить товар из корзины">
@@ -99,7 +99,7 @@
               </tr>
               <tr class="row">
                 <td class="col-1">
-                  <img class="" src="img/catalog/cross-small.svg" width="5" height="5" alt="Удалить товар из корзины">
+                  <input type="image" src="img/catalog/cross-small.svg" width="5" height="5" alt="Удалить товар из корзины">
                 </td>
                 <td class="col-2">
                   <img class="" src="img/catalog/product-3.jpg" width="10" height="10" alt="Удалить товар из корзины">
@@ -145,14 +145,14 @@
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Сортировка:</legend>
-          <section class="modal modal-sorting"></section>
-          <select name="sorting">
-            <option value="new">по популярности</option>
-            <option value="creamy">сначала недорогие</option>
-            <option value="sorbet">сначала дорогие</option>
-            <option value="fruit-ice">по жирности</option>
-          </select>
-    </section>
+          <section class="modal modal-sorting">
+            <select name="sorting">
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat-range">по жирности</option>
+            </select>
+        </section>
     </fieldset>
 
     <fieldset>
@@ -429,6 +429,7 @@
       </ul>
 
       <ul class="pagination-list">
+          <li class="pagination-item"><a href="#">&lt;</a></li>
         <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
