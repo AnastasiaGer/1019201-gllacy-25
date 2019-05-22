@@ -118,7 +118,7 @@ slide-btn
   color: #ffffff;
   background-color: #ae173b;
   background-image: url("img/index/bg-raspberry.jpg");
-  background-position: left;
+  background-position: 10px 50px;;
   background-repeat: no-repeat;
 }
 
@@ -137,7 +137,7 @@ slide-btn
   background-image: url("img/index/bg-chocolate.jpg");
 
   background-color: #4c2813;
-  background-position: left;
+  background-position: 10px 50px;;
   background-repeat: no-repeat;
 }
 
