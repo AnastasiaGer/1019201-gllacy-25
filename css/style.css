@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -36,8 +36,8 @@ a {
   border: none;
 
   color: #ffffff;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .button:hover,
@@ -47,8 +47,8 @@ a {
 }
 
 .main-navigation {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
 
   background-color: #849d8f;
@@ -74,16 +74,24 @@ a {
   color: #323232;
 }
 
-.main-header-worktime{
-  color: #ffffff;
-  font-size: 10px;
-  line-height: 12px;
+.login-link,
+.busket {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+
 }
 
-.main-header-phonenumber{
+.main-header-worktime {
   color: #ffffff;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main-header-phonenumber {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
 }
 
 .gallery-content-1 {
@@ -92,22 +100,35 @@ a {
 }
 
 .gallery-content-2 {
-  
+
   background-color: #8996a6;
   opacity: 1;
 }
 
 .gallery-content-3 {
-  
+
   background-color: #9d8b84;
   opacity: 1;
 }
 
-.catalog-category{
-  font-size: 30px;
-  line-height: 30px;
+.catalog-category {
+
+  left: 21.08%;
+  right: 21%;
+  top: 15.93%;
+  bottom: 79.02%;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  /* or 101% */
+  display: flex;
+  align-items: center;
+  text-align: center;
   color: #ffffff;
 }
+
 /*
 slides-switches
 slide-radio
@@ -116,28 +137,28 @@ slide-btn
 
 .specials-1 {
   color: #ffffff;
-  background-color: #ae173b;
+  background: rgba(165, 21, 54, 0.5);
   background-image: url("img/index/bg-raspberry.jpg");
-  background-position: 10px 50px;;
+  background-position: 50px 50px;
   background-repeat: no-repeat;
 }
 
 .specials-1.specials-2 h3 {
-  font-size: 20px;
-  line-height: 31px;
+  font-size: 35px;
+  line-height: 41px;
 }
 
 .specials-1.specials-2 p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 22px;
 }
 
 .specials-2 {
   color: #ffffff;
+  background-color: rgba(50, 28, 20, 0.5);
   background-image: url("img/index/bg-chocolate.jpg");
-
-  background-color: #4c2813;
-  background-position: 10px 50px;;
+  background-position: 10px 50px;
+  ;
   background-repeat: no-repeat;
 }
 
@@ -146,46 +167,50 @@ catalog-hits-list
 catalog-hits-item-image
 */
 
-.catalog-hits-item{
+.catalog-hits-item {
   list-style: none;
 }
 
-.catalog-hits-name{
-text-transform: none;
+.catalog-hits-name {
+  text-transform: none;
   text-decoration: underline;
   color: #ffffff;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
-.catalog-hits-item-price{
+.catalog-hits-item-price {
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
   color: #ffffff;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 45px;
+  line-height: 45px;
 }
 
 
 .features {
   color: #323232;
-  background-color: #f0e6d1;
+  background-color: rgba(240, 230, 209, 0.8);
   background-image: url("img/index/bg-waffle.png");
   background-position: left;
   background-repeat: no-repeat;
 }
-.features-list{
+
+.features-list {
   list-style: none;
 }
 
 .feature h3 {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 .feature-item {
   text-align: left;
-  font-size: 10;
-  line-height: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .news {
@@ -197,18 +222,19 @@ text-transform: none;
   background-repeat: no-repeat;
 }
 
-.news h3{
+.news h3 {
   color: #323232;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .news a {
   text-transform: none;
   text-decoration: underline;
   color: #323232;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .subscription {
@@ -218,15 +244,20 @@ text-transform: none;
   background-position: left;
   background-repeat: no-repeat;
 
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
-.contacts{
+.contacts,
+.contacts h2 {
   color: #323232;
   background-color: #fff;
-
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
+
 /*
 modal-feedback
 feedback-form
@@ -237,12 +268,15 @@ user-feedback
 feedback-text*/
 
 .page-title {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 35px;
+  line-height: 41px;
 }
 
-.creame-icecreame{
+.creame-icecreame {
   list-style: none;
+  font-size: 14px;
+font-weight: 400;
+line-height: 16px;
 }
 
 .creame-icecreame a {
@@ -263,21 +297,24 @@ feedback-text*/
 }
 
 .filter legend {
-  font-size: 15px;
-  line-height: 23px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 .filter ul {
   list-style: none;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label {
+.filter-input:hover+label,
+.filter-input:focus+label {
   color: #323232;
 }
 
-.filter-input:disabled + label {
+.filter-input:disabled+label {
   color: #323232;
   opacity: 0.5;
 }
@@ -301,23 +338,27 @@ feedback-text*/
 }
 
 .catalog-item h3 {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .pagination-list {
   list-style: none;
 }
+
 .pagination-item a {
   color: #ffffff;
 
   background-color: #849d8f;
 }
+
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-item a:active {
   background-color: #663d15;
 }
+
 .pagination-item-current a {
   color: #849d8f;
 
@@ -349,8 +390,17 @@ feedback-text*/
   color: #ffffff;
 }
 
-.footer-info ul{
+.footer-info ul {
   list-style: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-info .info-provider {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
 }
 
 .footer-info a {
@@ -365,10 +415,13 @@ feedback-text*/
 
 .footer-copyright {
   text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
-.main-footer-info{
-    color: #ffffff;
+.main-footer-info {
+  color: #ffffff;
 }
 
 .main-footer-info a:hover,
@@ -387,8 +440,9 @@ feedback-text*/
 }
 
 .modal p {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 .login-form input[type="text"],
