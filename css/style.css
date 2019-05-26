@@ -7,7 +7,6 @@ body {
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
-  /*text-transform*/
 
   background-color: #849d8f;
 }
@@ -21,14 +20,9 @@ body {
   display: none
 }
 
-a {
-  text-decoration: none;
-}
-
 .button {
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  background-color: #ffffff;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  background: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
   opacity: 0.99;
 
   text-align: center;
@@ -40,6 +34,19 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.button:hover,
+.button:focus {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+  box-shadow: 0px 2px 2px #AC1000;
+}
+
+.button:active {
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
 .button-gallery {
@@ -58,33 +65,46 @@ a {
   line-height: 44px;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: #f8f7f4;
+.button-gallery:hover,
+.button-gallery:focus {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+  box-shadow: 0px 2px 2px #AC1000;
 }
 
-.filter-button button {
+.button-gallery:active {
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+
+.filter-button {
   text-align: center;
   vertical-align: middle;
   font: inherit;
-  border: none;
-  border: 2px solid #ffffff;
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.0001);
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
 
-  color: #ffffff;
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #ffffff;
+  color: #323232;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-
 }
 
-.main-navigation {
+.filter-button:active {
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
+  color: #323232;
   font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
-  color: #ffffff;
-
-  background-color: #849d8f;
 }
 
 .site-navigation,
@@ -98,21 +118,33 @@ a {
   color: #ffffff;
 }
 
+.user-navigation {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
 .site-navigation a:hover,
 .user-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:focus {
+  box-shadow: inset 0 2px 1px #696969;
   background-color: #ededed;
   background-color: #f7f6f3;
   color: #323232;
 }
 
-.login-link,
-.busket {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
+.site-navigation-current a {
+  background-color: #d07058;
+  color: #ffffff;
+  text-decoration: none;
+}
 
+.full-busket a {
+  text-decoration: none;
+  color: #323232;
+  background-color: #f8f7f4;
+  opacity: 0.99;
 }
 
 .main-header-worktime {
@@ -154,18 +186,13 @@ a {
   color: #ffffff;
 }
 
-/*
-slides-switches
-slide-radio
-slide-btn
-*/
-
 .specials-1 {
   color: #ffffff;
   background: rgba(165, 21, 54, 0.5);
-  background-image: url("img/index/bg-raspberry.jpg");
-  background-position: 50px 50px;
+  background-image: url("../../img/index/bg-raspberry.jpg");
   background-repeat: no-repeat;
+  width: 530px;
+  height: 230px;
 }
 
 .specials-1.specials-2 h3 {
@@ -181,16 +208,11 @@ slide-btn
 .specials-2 {
   color: #ffffff;
   background-color: rgba(50, 28, 20, 0.5);
-  background-image: url("img/index/bg-chocolate.jpg");
-  background-position: 10px 50px;
-  ;
+  background-image: url("../../img/index/bg-chocolate.jpg");
   background-repeat: no-repeat;
+  width: 530px;
+  height: 230px;
 }
-
-/*catalog-hits
-catalog-hits-list
-catalog-hits-item-image
-*/
 
 .catalog-hits-item {
   list-style: none;
@@ -205,6 +227,18 @@ catalog-hits-item-image
   line-height: 22px;
 }
 
+.catalog-hits-name:hover,
+.catalog-hits-name:focus,
+.catalog-hits-name:active {
+  color: #ffbc9e;
+}
+
+.catalog-hits-item-image img {
+  width: 267px;
+  height: 267px;
+  border-radius: 300px;
+}
+
 .catalog-hits-item-price {
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
   color: #ffffff;
@@ -216,9 +250,9 @@ catalog-hits-item-image
 .features {
   color: #323232;
   background-color: rgba(240, 230, 209, 0.8);
-  background-image: url("img/index/bg-waffle.png");
+  background-image: url("../../img/index/bg-waffle.png");
   background-position: left;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .features-list {
@@ -242,9 +276,11 @@ catalog-hits-item-image
   list-style: none;
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url("img/index/bg-strawberry.jpg");
+  background-image: url("../../img/index/bg-strawberry.jpg");
   background-position: left;
   background-repeat: no-repeat;
+  width: 530px;
+  height: 210px;
 }
 
 .news h3 {
@@ -262,12 +298,19 @@ catalog-hits-item-image
   line-height: 30px;
 }
 
+.news a:hover,
+.news a:focus .news a:active {
+  color: #e84d37;
+}
+
 .subscription {
   color: #5a5a5a;
   background-color: #f8f7f4;
   background-image: url("img/index/bg-post.svg");
   background-position: left;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  width: 530px;
+  height: 210px;
 
   font-size: 16px;
   font-weight: 400;
@@ -282,15 +325,6 @@ catalog-hits-item-image
   font-weight: 400;
   line-height: 20px;
 }
-
-/*
-modal-feedback
-feedback-form
-user-first-name
-user-name
-user-email
-user-feedback
-feedback-text*/
 
 .page-title {
   font-size: 35px;
@@ -310,7 +344,7 @@ feedback-text*/
 
 .creame-icecreame a:hover,
 .creame-icecreame a:focus {
-  text-decoration: underline;
+  color: #ffbc9e;
 }
 
 .creame-icecreame-current {
@@ -368,11 +402,25 @@ feedback-text*/
   line-height: 22px;
 }
 
+.catalog-item-image img {
+  width: 267px;
+  height: 267px;
+  border-radius: 300px;
+}
+
+
 .catalog-item-price {
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
 }
+
+.catalog-item-name:hover,
+.catalog-item-name:focus,
+.catalog-item-name:active {
+  color: #ffbc9e;
+}
+
 
 .pagination-list {
   list-style: none;
@@ -380,27 +428,19 @@ feedback-text*/
 
 .pagination-item a {
   color: #ffffff;
-
-  background-color: #849d8f;
+  text-decoration: none;
 }
 
 .pagination-item a:hover,
-.pagination-item a:focus,
-.pagination-item a:active {
-  background-color: #663d15;
+.pagination-item a:focus {
+  background: rgba(255, 255, 255, 0.0001);
+  opacity: 0.2;
+  /* Цвет шрифта задан белый, но он не срабатывает. Не могу понять почему((*/
+  color: #ffffff;
 }
 
 .pagination-item-current a {
-  color: #849d8f;
-
-  background-color: #ffffff;
-}
-
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
-  color: #849d8f;
-
+  color: #323232;
   background-color: #ffffff;
 }
 
@@ -441,7 +481,7 @@ feedback-text*/
 
 .footer-info a:hover,
 .footer-info a:focus {
-  text-decoration: none;
+  color: #ffbc9e;
 }
 
 .footer-copyright {
@@ -451,17 +491,14 @@ feedback-text*/
   line-height: 18px;
 }
 
-.main-footer-info {
+.footer-copyright-info {
   color: #ffffff;
 }
 
-.main-footer-info a:hover,
-.main-footer-info a:hover,
-.main-footer-info a:focus,
-.main-footer-info a:focus {
-  background-color: #ededed;
-  background-color: #f7f6f3;
-  color: #323232;
+.footer-copyright-info:hover,
+.footer-copyright-info:focus,
+.footer-copyright-info:active {
+  color: #ffbc9e;
 }
 
 .modal {
