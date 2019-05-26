@@ -102,9 +102,7 @@ body {
   box-shadow: inset 0 2px 1px #696969;
   background-color: #ededed;
   color: #323232;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
+
 }
 
 .site-navigation,
@@ -128,9 +126,17 @@ body {
 .user-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:focus {
+  background-color: #f7f6f3;
+  color: #323232;
+}
+
+.site-navigation a:active,
+.user-navigation a:active,
+.site-navigation a:active,
+.user-navigation a:active {
   box-shadow: inset 0 2px 1px #696969;
   background-color: #ededed;
-  background-color: #f7f6f3;
+  background-color: #f8f7f4;
   color: #323232;
 }
 
@@ -189,7 +195,7 @@ body {
 .specials-1 {
   color: #ffffff;
   background: rgba(165, 21, 54, 0.5);
-  background-image: url("../../img/index/bg-raspberry.jpg");
+  background-image: url("../img/index/bg-raspberry.jpg");
   background-repeat: no-repeat;
   width: 530px;
   height: 230px;
@@ -208,7 +214,7 @@ body {
 .specials-2 {
   color: #ffffff;
   background-color: rgba(50, 28, 20, 0.5);
-  background-image: url("../../img/index/bg-chocolate.jpg");
+  background-image: url("../img/index/bg-chocolate.jpg");
   background-repeat: no-repeat;
   width: 530px;
   height: 230px;
@@ -225,12 +231,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-}
-
-.catalog-hits-name:hover,
-.catalog-hits-name:focus,
-.catalog-hits-name:active {
-  color: #ffbc9e;
 }
 
 .catalog-hits-item-image img {
@@ -250,7 +250,7 @@ body {
 .features {
   color: #323232;
   background-color: rgba(240, 230, 209, 0.8);
-  background-image: url("../../img/index/bg-waffle.png");
+  background-image: url("../img/index/bg-waffle.png");
   background-position: left;
   background-repeat: repeat;
 }
@@ -276,7 +276,7 @@ body {
   list-style: none;
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url("../../img/index/bg-strawberry.jpg");
+  background-image: url("../img/index/bg-strawberry.jpg");
   background-position: left;
   background-repeat: no-repeat;
   width: 530px;
@@ -415,13 +415,6 @@ body {
   line-height: 45px;
 }
 
-.catalog-item-name:hover,
-.catalog-item-name:focus,
-.catalog-item-name:active {
-  color: #ffbc9e;
-}
-
-
 .pagination-list {
   list-style: none;
 }
@@ -503,7 +496,6 @@ body {
 
 .modal {
   color: #999999;
-
   background-color: #f8f7f4;
 }
 
