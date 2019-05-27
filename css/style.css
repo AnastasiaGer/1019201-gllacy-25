@@ -50,59 +50,29 @@ body {
 }
 
 .button-gallery {
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  background-color: #ffffff;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-  opacity: 0.99;
-
-  text-align: center;
-  vertical-align: middle;
-  font: inherit;
-  border: none;
-
-  color: #ffffff;
   font-size: 32px;
   line-height: 44px;
 }
 
-.button-gallery:hover,
-.button-gallery:focus {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, #E74A35 0%, #F26843 100%);
-  box-shadow: 0px 2px 2px #AC1000;
-}
-
-.button-gallery:active {
-  box-shadow: 0 2px 2px #ac1000;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-color: #ffffff;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-}
-
-
 .filter-button {
-  text-align: center;
-  vertical-align: middle;
-  font: inherit;
   background: rgba(255, 255, 255, 0.0001);
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
-  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   background-color: #ffffff;
   color: #323232;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
 }
 
 .filter-button:active {
   box-shadow: inset 0 2px 1px #696969;
   background-color: #ededed;
   color: #323232;
-
 }
 
 .site-navigation,
@@ -130,8 +100,6 @@ body {
   color: #323232;
 }
 
-.site-navigation a:active,
-.user-navigation a:active,
 .site-navigation a:active,
 .user-navigation a:active {
   box-shadow: inset 0 2px 1px #696969;
@@ -234,8 +202,6 @@ body {
 }
 
 .catalog-hits-item-image img {
-  width: 267px;
-  height: 267px;
   border-radius: 300px;
 }
 
@@ -403,8 +369,6 @@ body {
 }
 
 .catalog-item-image img {
-  width: 267px;
-  height: 267px;
   border-radius: 300px;
 }
 
