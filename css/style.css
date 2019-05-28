@@ -20,6 +20,53 @@ body {
   display: none
 }
 
+.main-header {
+  margin-bottom: 75px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.main-header-logo {
+  width: 368px;
+  height: 153px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-header-worktime,
+.main-header-phonenumber {
+  text-align: right;
+
+}
+
 .button {
   background: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
@@ -160,13 +207,21 @@ body {
   color: #ffffff;
 }
 
+.specials {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .specials-1 {
   color: #ffffff;
   background: rgba(165, 21, 54, 0.5);
   background-image: url("../img/index/bg-raspberry.jpg");
   background-repeat: no-repeat;
-  width: 530px;
+  width: 560px;
   height: 230px;
+  border-radius: 15px;
 }
 
 .specials-1.specials-2 h3 {
@@ -184,11 +239,29 @@ body {
   background-color: rgba(50, 28, 20, 0.5);
   background-image: url("../img/index/bg-chocolate.jpg");
   background-repeat: no-repeat;
-  width: 530px;
+  width: 560px;
   height: 230px;
+  border-radius: 15px;
+}
+
+.catalog-hits {
+  width: 1130px;
+}
+
+.catalog-hits-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
 }
 
 .catalog-hits-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
   list-style: none;
 }
 
@@ -214,14 +287,32 @@ body {
 
 
 .features {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1165px;
+
+  left: 1.5%;
+  right: 1.42%;
+  top: 52.48%;
+  bottom: 34.06%;
+
+
   color: #323232;
   background-color: rgba(240, 230, 209, 0.8);
   background-image: url("../img/index/bg-waffle.png");
-  background-position: left;
+  background-position: center;
   background-repeat: repeat;
+  border-radius: 10px;
 }
 
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -232,10 +323,19 @@ body {
 }
 
 .feature-item {
+  width: 488px;
+
   text-align: left;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.index-columns {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .news {
@@ -243,10 +343,9 @@ body {
   color: #ffffff;
   background-color: #ffffff;
   background-image: url("../img/index/bg-strawberry.jpg");
-  background-position: left;
   background-repeat: no-repeat;
-  width: 530px;
-  height: 210px;
+  width: 560px;
+  border-radius: 10px;
 }
 
 .news h3 {
@@ -275,12 +374,13 @@ body {
   background-image: url("img/index/bg-post.svg");
   background-position: left;
   background-repeat: repeat;
-  width: 530px;
-  height: 210px;
+  width: 560px;
+
 
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  border-radius: 10px;
 }
 
 .contacts,
@@ -298,6 +398,10 @@ body {
 }
 
 .creame-icecreame {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
   list-style: none;
   font-size: 14px;
   font-weight: 400;
@@ -344,13 +448,31 @@ body {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 1130px;
+}
+
 .catalog-list {
   list-style: none;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .catalog-item {
   background-color: #849d8f;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 267px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -380,6 +502,9 @@ body {
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -402,11 +527,19 @@ body {
 }
 
 .main-footer {
+  margin-top: 65px;
+  padding: 60px 0;
   color: #ffffff;
-  background-color: #849d8f;
+}
+
+.main-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .footer-social {
+  width: 145px;
   text-align: left;
 }
 
@@ -418,11 +551,20 @@ body {
   color: #ffffff;
 }
 
+.footer-info {
+  width: 304px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-info ul {
   list-style: none;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+
+
+
 }
 
 .footer-info .info-provider {
@@ -442,7 +584,9 @@ body {
 }
 
 .footer-copyright {
-  text-align: right;
+  width: 150px;
+
+  text-align: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
