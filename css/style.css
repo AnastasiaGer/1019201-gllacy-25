@@ -22,7 +22,7 @@ body {
 .search-form,
 .gallery-content-2,
 .gallery-content-3 {
-  display: none
+  display: none;
 }
 
 .main-navigation {
@@ -35,18 +35,13 @@ body {
   margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
-
-
 }
 
 .site-navigation-container {
   display: flex;
   justify-content: space-between;
   list-style: none;
-
 }
-
-
 
 .site-navigation,
 .user-navigation {
@@ -69,12 +64,10 @@ body {
 
 .site-navigation a,
 .user-navigation a {
-  display: block;
+  
   padding: 25px 20px;
-
   vertical-align: middle;
 }
-
 .user-navigation .login-link {
   padding-left: 50px;
   position: relative;
@@ -609,18 +602,6 @@ body {
 
 }
 
-/*
-.social-button:hover,
-.social-button:focus {
-  background-color: #ffffff;
-}
-
-.social-button:hover path,
-.social-button:focus path {
-  fill: #ffffff;
-}
-}*/
-
 .footer-info {
   width: 340px;
   display: flex;
@@ -628,8 +609,6 @@ body {
   justify-content: space-between;
   margin: auto;
   list-style: none;
-
-
 }
 
 .footer-info ul {
@@ -640,8 +619,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-
 }
 
 .footer-info .info-provider {
@@ -677,7 +654,6 @@ body {
 
 .footer-copyright-info {
   color: #ffffff;
-
 }
 
 .footer-copyright b {
