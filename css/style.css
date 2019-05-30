@@ -12,6 +12,8 @@ body {
   color: #ffffff;
 
   background-color: #849d8f;
+
+
 }
 
 .modal-categories-ice-cream,
@@ -57,17 +59,43 @@ body {
 }
 
 .user-navigation {
-  max-width: 140px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+
   display: flex;
   position: relative;
 }
 
 .site-navigation a,
 .user-navigation a {
-  
+  color: #ffffff;
   padding: 25px 20px;
   vertical-align: middle;
 }
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus {
+  background-color: #f7f6f3;
+  color: #323232;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.site-navigation-current a {
+  background-color: #d07058;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .user-navigation .login-link {
   padding-left: 50px;
   position: relative;
@@ -107,9 +135,15 @@ body {
   position: absolute;
   top: 137px;
   right: 147px;
+
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .main-header-phonenumber {
+  font-size: 22px;
+  line-height: 24px;
+
   position: absolute;
   top: 147px;
   right: 144px;
@@ -170,43 +204,8 @@ body {
   color: #323232;
 }
 
-.site-navigation,
-.user-navigation,
 .modal-categories-ice-cream {
   list-style: none;
-}
-
-.site-navigation a,
-.user-navigation a {
-  color: #ffffff;
-}
-
-.user-navigation {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-}
-
-.site-navigation a:hover,
-.user-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:focus {
-  background-color: #f7f6f3;
-  color: #323232;
-}
-
-.site-navigation a:active,
-.user-navigation a:active {
-  box-shadow: inset 0 2px 1px #696969;
-  background-color: #ededed;
-  background-color: #f8f7f4;
-  color: #323232;
-}
-
-.site-navigation-current a {
-  background-color: #d07058;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .full-busket a {
@@ -214,18 +213,6 @@ body {
   color: #323232;
   background-color: #f8f7f4;
   opacity: 0.99;
-}
-
-.main-header-worktime {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.main-header-phonenumber {
-  color: #ffffff;
-  font-size: 22px;
-  line-height: 24px;
 }
 
 .gallery-content-1 {
@@ -541,37 +528,68 @@ body {
 }
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
 
-  width: 280px;
-  margin: 30px auto;
-  padding: 10px;
-display: flex;
-  white-space: nowrap;
+.pagination-item {
+  margin-right: 5px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .pagination-item a {
-  color: #ffffff;
-  text-decoration: none;
+  display: block;
+  padding: 10px 19px;
 
-  display:inline-block;
-  height:40px;
-  min-width:20px;
-  padding: 0px 10px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-decoration: none;
 }
 
 .pagination-item a:hover,
 .pagination-item a:focus {
-  background: rgba(255, 255, 255, 0.0001);
+  background-color: rgba(255, 255, 255, 0.0001);
   opacity: 0.2;
   /* Цвет шрифта задан белый, но он не срабатывает. Не могу понять почему((*/
   color: #ffffff;
 }
 
-.pagination-item-current a {
+.paginator-item-current a {
   color: #323232;
   background-color: #ffffff;
+}
+
+.pagination-list .prev {
+  margin-right: 20px;
+  background-image: url("../img/catalog/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  
+}
+
+.pagination-list .disabled {
+  opacity: 0.3;
+}
+
+.pagination-list .next {
+  margin-left: 20px;
+  background-image: url("../img/catalog/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -40px;
+
+  
 }
 
 .main-footer {
