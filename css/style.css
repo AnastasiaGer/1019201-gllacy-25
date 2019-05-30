@@ -541,15 +541,24 @@ body {
 }
 
 .pagination-list {
-  padding: 0;
-  margin: 0;
 
   list-style: none;
+
+  width: 280px;
+  margin: 30px auto;
+  padding: 10px;
+display: flex;
+  white-space: nowrap;
 }
 
 .pagination-item a {
   color: #ffffff;
   text-decoration: none;
+
+  display:inline-block;
+  height:40px;
+  min-width:20px;
+  padding: 0px 10px;
 }
 
 .pagination-item a:hover,
