@@ -36,14 +36,14 @@ body {
   display: flex;
   justify-content: space-between;
 
-  
+
 }
 
 .site-navigation-container {
   display: flex;
   justify-content: space-between;
   list-style: none;
- 
+
 }
 
 
@@ -377,10 +377,10 @@ body {
 }
 
 .index-columns {
-  
+
   display: flex;
   justify-content: space-around;
- 
+
 }
 
 .news {
@@ -576,19 +576,19 @@ body {
   margin-top: 65px;
   padding: 60px 0;
   color: #ffffff;
-  
+
 }
 
 .main-footer .main-footer-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .footer-social {
   width: 187px;
-  
+
 }
 
 .footer-social ul {
@@ -598,16 +598,17 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  
+
 }
 
 .social-button {
-    width: 43px;
-    height: 43px;
+  width: 43px;
+  height: 43px;
 
   color: #ffffff;
 
 }
+
 /*
 .social-button:hover,
 .social-button:focus {
@@ -625,10 +626,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-margin: auto;
+  margin: auto;
   list-style: none;
 
-  
+
 }
 
 .footer-info ul {
@@ -658,6 +659,7 @@ margin: auto;
 .footer-info a:focus {
   color: #ffbc9e;
 }
+
 .footer-copyright .button {
   display: block;
   margin-right: 0;
@@ -667,7 +669,7 @@ margin: auto;
 .footer-copyright {
   width: 210px;
   margin-left: auto;
-  
+
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -675,8 +677,9 @@ margin: auto;
 
 .footer-copyright-info {
   color: #ffffff;
- 
+
 }
+
 .footer-copyright b {
   display: block;
   margin-bottom: 15px;
