@@ -302,22 +302,25 @@ body {
 .busket-link:active::before {
   opacity: 1;
 }
+
 .user-navigation .full-busket-link {
   position: relative;
   padding-left: 50px;
-  margin:0;
-  
+  margin: 0;
+
   text-decoration: none;
   border-radius: 50px;
 }
+
 .full-busket a {
   text-decoration: none;
   color: #323232;
   background-color: #f8f7f4;
   opacity: 0.99;
-  padding-right:15px;
-  
+  padding-right: 15px;
+
 }
+
 .full-busket-link::before {
   content: "";
 
@@ -447,10 +450,10 @@ body {
 }
 
 .specials {
-  
+
   display: flex;
   justify-content: space-around;
-  
+
 }
 
 .specials-1 h3,
@@ -484,7 +487,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
 }
 
 .specials-2 {
@@ -501,18 +504,18 @@ body {
   justify-content: space-between;
 }
 
-.catalog-hits{
+.catalog-hits {
   display: flex;
   justify-content: space-around;
 
- 
+
 }
 
 .catalog-hits-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  
+
   list-style: none;
 
   text-align: center;
@@ -524,7 +527,7 @@ body {
 
   margin-bottom: 20px;
   margin-right: 20px;
-  
+
   background-color: #849d8f;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -567,8 +570,8 @@ body {
 
 .features {
   background-position: top center;
-  margin:25px;
-  
+  margin: 25px;
+
   color: #323232;
   background-color: rgba(240, 230, 209, 0.8);
   background-image: url("../img/index/bg-waffle.png");
@@ -605,12 +608,12 @@ body {
   font-weight: 400;
   line-height: 22px;
 
-  padding-bottom:5px;
-  padding-top:15px;
+  padding-bottom: 5px;
+  padding-top: 15px;
 }
 
 .index-columns {
-  
+
   display: flex;
   justify-content: space-around;
 }
@@ -670,7 +673,7 @@ body {
   border-radius: 10px;
 }
 
-.subscription-info-text{
+.subscription-info-text {
 
   padding-left: 25px;
   padding-right: 25px;
@@ -679,7 +682,8 @@ body {
 
   margin: 0;
 }
-.login-icon-user{
+
+.login-icon-user {
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 20px;
@@ -698,7 +702,7 @@ body {
 .page-title {
   font-size: 35px;
   line-height: 41px;
-  margin:25px;
+  margin: 25px;
 }
 
 .creame-icecreame {
@@ -728,13 +732,13 @@ body {
 
 .filter {
   width: 855px;
-  margin:25px;
+  margin: 25px;
   display: flex;
   flex-wrap: wrap;
-  
+
   justify-content: space-between;
 
-  
+
 }
 
 .filter fieldset {
@@ -767,7 +771,7 @@ body {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
- 
+
   list-style: none;
 
   text-align: center;
@@ -782,7 +786,7 @@ body {
 
   background-color: #849d8f;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- 
+
 }
 
 .catalog-item:nth-child(4n) {
@@ -885,10 +889,9 @@ body {
 }
 
 .main-footer {
-  margin-top: 65px;
   padding: 60px 0;
   color: #ffffff;
-  
+
 }
 
 .main-footer .container {
@@ -897,8 +900,9 @@ body {
 
 .footer-social {
   width: 180px;
-  
+
   text-align: center;
+  margin-right: auto;
 }
 
 .footer-social ul {
@@ -906,8 +910,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 176px;
-  
-  
+
   list-style: none;
 }
 
@@ -920,7 +923,7 @@ body {
 
 .footer-info {
   width: 340px;
-  margin-left: auto;
+  
   list-style: none;
 }
 
@@ -1002,6 +1005,6 @@ body {
   border: 2px solid #999999;
 }
 
-.contacts{
-  width:350px; 
+.contacts {
+  width: 350px;
 }
