@@ -26,19 +26,15 @@
             </a>
 
             <ul class="site-navigation">
-              <li><a href="catalog.html">Каталог</a>
-
-                <section class="modal modal-categories-ice-cream">
-                  <ul>
-                    <li class="new"><a href="#">Новинки</a></li>
-                    <li class="creamy"><a href="catalog.html">Сливочное</a></li>
-                    <li class="sorbet"><a href="#">Щербеты</a></li>
-                    <li class="fruit-ice"><a href="#">Фруктовый лед</a></li>
-                    <li class="melorin"><a href="#">Мелорин</a></li>
-                  </ul>
-                </section>
+              <li class="open"><a href="catalog.html">Каталог</a>
+                <ul class="sub-site-navigation">
+                  <li class="new"><a href="#">Новинки</a></li>
+                  <li class="creamy"><a href="catalog.html">Сливочное</a></li>
+                  <li class="sorbet"><a href="#">Щербеты</a></li>
+                  <li class="fruit-ice"><a href="#">Фруктовый лед</a></li>
+                  <li class="melorin"><a href="#">Мелорин</a></li>
+                </ul>
               </li>
-
               <li><a href="delivery.html">Доставка и оплата</a></li>
               <li><a href="info.html">О компании</a></li>
             </ul>
@@ -72,7 +68,7 @@
             </li>
 
             <li class="busket">
-              <a class="busket-link" href="busket.html">
+              <a class="busket-link busket-button" href="busket.html">
                 Пусто
               </a>
             </li>
@@ -376,24 +372,28 @@
         </ul>
       </div>
 
-      <div class="footer-info-columns">
-        <section class="footer-info">
-          <p class="info-provider"><a class="info" href="#">Для поставщиков</a></p>
-          <p><a class="info" href="#">Наши документы</a></p>
-          <p><a class="info" href="#">О производстве</a></p>
-          <p><a class="info" href="#">Экологические стандарты</a></p>
-        </section>
-      </div>
 
-      <p class="footer-copyright">
-        <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-        </a>
+      <section class="footer-info">
+        <div class="footer1-info-columns">
+          <a class="info-provider" href="#">Для поставщиков</a>
+          <a class="info-provider" href="#">Наши документы</a>
+        </div>
+        <div class="footer2-info-columns">
+          <a class="info-provider" href="#">О производстве</a>
+          <a class="info-provider" href="#">Экологические стандарты</a>
+        </div>
+      </section>
+    
 
-        <b>Сделано в
-          <a class="footer-copyright-info" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-          © 2019</b>
-      </p>
+    <p class="footer-copyright">
+      <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+      </a>
+
+      <b>Сделано в
+        <a class="footer-copyright-info" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        © 2019</b>
+    </p>
     </div>
   </footer>
 </body>
