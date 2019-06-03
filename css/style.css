@@ -1,6 +1,9 @@
 body {
-  min-width: 1200px;
+  width: 1200px;
+
   margin: 0;
+  margin-left: auto; 
+  margin-right: auto;
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
@@ -180,7 +183,7 @@ body {
 
 .site-navigation-container {
   display: flex;
-  align-content: flex-start;
+  
 }
 
 .site-navigation,
@@ -212,25 +215,7 @@ body {
   vertical-align: middle;
 }
 
-.user-navigation {
-  display: flex;
-  align-items: center;
-  max-width: 245px;
 
-  color: #FFFFFF;
-
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-}
-
-.user-navigation a {
-  padding: 8px 20px;
-
-  vertical-align: middle;
-  text-decoration: none;
-  color: #FFFFFF
-}
 
 .site-navigation a:hover,
 .user-navigation a:hover,
@@ -309,11 +294,35 @@ body {
   background-color: #f6b5a5;
   color: #323232;
 }
+.user-navigation {
+  display: flex;
+  align-items: center;
+  max-width: 245px;
 
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.user-navigation a {
+  
+  background: #a1b4a9;
+  border: 0px solid #FFFFFF;
+  border-radius: 50px;
+  
+  text-decoration: none;
+
+  padding-left:40px;
+  padding-right:20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  
+  text-decoration: none;
+  color: #FFFFFF;
+}
 .user-navigation .login-link {
   position: relative;
-  padding-left: 50px;
-
+  
 }
 
 .login-link::before {
@@ -321,7 +330,7 @@ body {
 
   position: absolute;
   top: 8px;
-  left: 25px;
+  left: 15px;
 
   width: 21px;
   height: 19px;
@@ -329,8 +338,7 @@ body {
   background-image: url("../img/entrance.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: #323232;
-  opacity: 0.3;
+  opacity: 1;
 
 }
 
@@ -338,7 +346,7 @@ body {
 .login-link:focus::before,
 .login-link:active::before {
   background-color: #323232;
-  opacity: 1;
+
 }
 
 .user-navigation .busket-link {
@@ -367,7 +375,7 @@ body {
 .busket-link:hover::before,
 .busket-link:focus::before,
 .busket-link:active::before {
-  opacity: 1;
+  background-color: #323232;
 }
 
 .user-navigation .full-busket-link {
@@ -530,9 +538,9 @@ body {
   background: rgba(165, 21, 54, 0.5);
   background-image: url("../img/index/bg-raspberry.jpg");
   background-repeat: no-repeat;
-  width: 560px;
+  width: 50%;
   height: 230px;
-  border-radius: 15px;
+  border-radius: 25px;
 
   display: flex;
   flex-direction: column;
@@ -546,9 +554,9 @@ body {
   background-color: rgba(50, 28, 20, 0.5);
   background-image: url("../img/index/bg-chocolate.jpg");
   background-repeat: no-repeat;
-  width: 560px;
+  width: 50%;
   height: 230px;
-  border-radius: 15px;
+  border-radius: 25px;
 
   display: flex;
   flex-direction: column;
@@ -578,14 +586,14 @@ body {
 .button-specials-1 {
   box-sizing: border-box;
   position: absolute;
-  left: 380px;
+  left: 370px;
   bottom: 25px;
 }
 
 .button-specials-2 {
   box-sizing: border-box;
   position: absolute;
-  right: 55px;
+  right: 30px;
   bottom: 25px;
 }
 
@@ -600,14 +608,13 @@ body {
   padding: 0;
   text-align: center;
 
-
   list-style: none;
 }
 
-.catalog-hits-item {
+.catalog-hits-list .catalog-hits-item {
   width: 267px;
+ 
   margin-right: 25px;
-  margin-bottom: 20px;
 
   flex-grow: 1;
 
@@ -634,6 +641,7 @@ body {
 
 .catalog-hits-item-image img {
   border-radius: 50%;
+  
 }
 
 .catalog-hits-item-price {
@@ -660,7 +668,8 @@ body {
   background-image: url("../img/index/bg-waffle.png");
   background-position: center;
   background-repeat: repeat;
-  border-radius: 10px;
+  border-radius: 25px;
+  padding: 0;
 }
 
 .features-list {
@@ -680,9 +689,10 @@ body {
   padding-right: 25px;
   padding-top: 20px;
   padding-bottom: 0px;
+  margin:0;
 }
 
-.feature-item p {
+.features-list p {
   width: 488px;
   text-align: left;
 
@@ -690,11 +700,85 @@ body {
   font-weight: 400;
   line-height: 22px;
 
-  margin: 15px;
-  padding: 15px;
-
+  margin: 10px;
+  padding-left:15px;
+}
+.features .feature-item1 {
+  position: relative;
 }
 
+.feature-item1::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: -30px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/index/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
+.features .feature-item2 {
+  position: relative;
+}
+
+.feature-item2::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: -30px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/index/cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
+.features .feature-item3 {
+  position: relative;
+}
+
+.feature-item3::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: -30px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/index/eco.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
+.features .feature-item4 {
+  position: relative;
+}
+
+.feature-item4::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: -30px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/index/thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
 .index-columns {
   display: flex;
   margin: 25px;
@@ -706,10 +790,10 @@ body {
   background-color: #ffffff;
   background-image: url("../img/index/bg-strawberry.jpg");
   background-repeat: no-repeat;
-  width: 560px;
+  width: 50%;
   height: 230px;
 
-  border-radius: 10px;
+  border-radius: 25px;
 
   display: flex;
   flex-direction: column;
@@ -754,10 +838,10 @@ body {
   background-image: url("img/index/bg-post.svg");
   background-position: left;
   background-repeat: repeat;
-  width: 560px;
+  width: 50%;
   height: 230px;
 
-  border-radius: 10px;
+  border-radius: 25px;
 
   display: flex;
   flex-direction: column;
