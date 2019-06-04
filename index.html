@@ -47,17 +47,9 @@
               <section class="modal modal-search-form">
                 <form action="https://echo.htmlacademy.ru" method="get">
                   <input class="search-form" type="text" name="search" value="" placeholder="Что ищем?">
-                  <button class="button-search" type="submit"><span class="visually-hidden">Что ищем?</span><svg
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
-                      height="17" viewBox="0 0 17 17">
-                      <g>
-                        <g>
-                          <image width="17" height="17"
-                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABc0lEQVQ4T5WTvStGcRTHP19P3v4BZbNRXgaEiUEG8aAYLDaSwWpRSllkVpIMFoNkQchiEhaKlM2AwT+AwdHR7+o+P+4tZ7r3fM/93PMqUmZmo8AC0ABUAB/Anfsk7adj08/yFzPzD06AnqzAoBclObjEEsgZ0B2Ue2AVuAXagFmgLmhHkvp/QcxsDNgJwoqkuTjIzLaAieAflHRQUo6Z+R8bvXZJTX+VY2ae8RNQC1xI6ooh76GJU5I2snpiZkvAPPAmqTqGWHB0SLrKgYwD20EvSPpMYmVmSSYzktZyIMuA9+tdUlWcyQ3QAjxIqs/oSQF4BmqAS0mdMWQE2AvOdUnT0QI6YBcYDv4BSYd/Ldsp0BuER2AztSeTIQOXvfR2ST7RH0tvrK91X1ZPwgkkp+BD8DZ82zckMTMrhttpBirDh9fAIvDiOwKUB/8PqAQSAcvSY3TNzPwMzmNQJiRn1L9BOT3IlKKMXv+dSap/rcAxMPQFcjKNW3jrJu4AAAAASUVORK5CYII=" />
-                        </g>
-                      </g>
-                    </svg></button>
                 </form>
+                  <button class="button-search" type="submit"><span class="visually-hidden">Поиск</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+                     </button>
               </section>
             </li>
 
@@ -255,8 +247,8 @@
           что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <form class="subscription-info" action="https://echo.htmlacademy.ru" method="post">
           <p>
-            <label class="visually-hidden" for="user-login">Электронная почта</label>
-            <input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
+            <label class="visually-hidden" for="subscription-login">Электронная почта</label>
+            <input id="subscription-login" class="login-icon-user" type="text" name="login" placeholder="Электронная почта">
           </p>
           <button class="button button-subscription" type="submit">
             Отправить
@@ -270,7 +262,7 @@
         Как до нас добраться
       </h2>
       <p>
-        <img src="img/index/map.png" width="780" height="300"
+        <img src="img/index/map.png"
           alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
     </section>
@@ -284,32 +276,12 @@
         8 812 450-25-25<br>
         (с 10 до 20 ежедневно)
       </p>
-      <button class="button" type="submit">
+      <button class="button button-contacts" type="submit">
         Форма обратной связи
       </button>
     </section>
 
-    <section class="modal modal-feedback">
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>Мы обязательно Вам ответим!</p>
-        <p>
-          <label class="visually-hidden" for="user-first-name">Как Вас зовут?</label>
-          <input id="user-first-name" class="user-name" type="text" name="name" placeholder="Как Вас зовут?">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-email">Ваша почта для ответа?</label>
-          <input id="user-email" class="user-mail" type="text" name="mail" placeholder="Ваша почта для ответа?">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-feedback">Напишите что-нибудь</label>
-          <input id="user-feedback" class="feedback-text" type="text" name="feedback"
-            placeholder="Напишите что-нибудь...">
-        </p>
-        <button class="button" type="submit">
-          Отправить
-        </button>
-      </form>
-    </section>
+    
   </main>
 
   <footer class="main-footer">
@@ -394,6 +366,28 @@
       </p>
       <button class="button" type="submit">
         Войти
+      </button>
+    </form>
+  </section>
+
+  <section class="modal modal-feedback">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>Мы обязательно Вам ответим!</p>
+      <p>
+        <label class="visually-hidden" for="user-first-name">Как Вас зовут?</label>
+        <input id="user-first-name" class="user-name" type="text" name="name" placeholder="Как Вас зовут?">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-email">Ваша почта для ответа?</label>
+        <input id="user-email" class="user-mail" type="text" name="mail" placeholder="Ваша почта для ответа?">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-feedback">Напишите что-нибудь</label>
+        <input id="user-feedback" class="feedback-text" type="text" name="feedback"
+          placeholder="Напишите что-нибудь...">
+      </p>
+      <button class="button" type="submit">
+        Отправить
       </button>
     </form>
   </section>
