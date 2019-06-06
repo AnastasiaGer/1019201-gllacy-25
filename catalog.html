@@ -36,25 +36,21 @@
           </div>
 
           <ul class="user-navigation">
-            <li class="search-search-form">
-              <section class="modal modal-search-form">
-                <form action="https://echo.htmlacademy.ru" method="get">
-                  <input class="search-form" type="text" name="search" value="" placeholder="Что ищем?">
-                  <button class="button-search" type="submit"><span class="visually-hidden">Что ищем?</span><svg
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
-                      height="17" viewBox="0 0 17 17">
-                      <path fill="#fff"
-                        d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
-                    </svg></button>
-                </form>
-              </section>
-            </li>
-
-            <li class="login">
-              <a class="login-link" href="login.html">
-                Вход
-              </a>
-            </li>
+              <li class="search">
+                <button class="button-search" type="submit"><span class="visually-hidden">Поиск</span><svg
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"
+                    viewBox="0 0 17 17">
+                    <path fill="#fff"
+                      d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
+                  </svg>
+                </button>
+              </li>
+  
+              <li class="login">
+                <a class="login-link" href="login.html">
+                  Вход
+                </a>
+              </li>
 
             <li class="full-busket">
               <a class="full-busket-link" href="busket.html">
@@ -62,51 +58,6 @@
               </a>
             </li>
           </ul>
-
-          <section class="modal modal-busket">
-            <h3 class="visually-hidden">Товары в корзине</h3>
-            <form class="busket-form" action="https://#" method="post">
-              <table cellspacing="5">
-                <tr class="row">
-                  <td class="visually-hidden">Удалить товар из корзины</td>
-                  <td class="visually-hidden">Изображение товара</td>
-                  <td class="visually-hidden">Название товара</td>
-                  <td class="visually-hidden">Цена за килограмм</td>
-                  <td class="visually-hidden">Общая стоимость товара</td>
-                </tr>
-                <tr class="row">
-                  <td class="col-1">
-                    <button type="button">Удалить товар из корзины</button>
-                  </td>
-                  <td class="col-2">
-                    <img class="" src="img/catalog/product-1.jpg" width="10" height="10" alt="Удалить товар из корзины">
-
-                  </td>
-                  <td class="col-3">Пломбир с апельсиновым джемом</td>
-                  <td class="col-4">1,5 кг х 200 руб.</td>
-                  <td class="col-5">300 руб.</td>
-                </tr>
-                <tr class="row">
-                  <td class="col-1">
-                    <button type="button">Удалить товар из корзины</button> </td>
-                  <td class="col-2">
-                    <img class="" src="img/catalog/product-3.jpg" width="10" height="10" alt="Удалить товар из корзины">
-                  </td>
-                  <td class="col-3">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="col-4">1,5 кг х 300 руб.</td>
-                  <td class="col-5">450 руб.</td>
-                </tr>
-                <tr class="row">
-                  <td class="col-1" colspan=«4»>Итого:</td>
-                  <td class="col-5">750 руб.</td>
-                </tr>
-              </table>
-              <button class="button" type="submit">
-                Оформить заказ
-              </button>
-            </form>
-          </section>
-
         </nav>
 
         <section class="main-header-contacts">
@@ -117,30 +68,6 @@
           <div class="phonenumber">
             8 812 450-25-25
           </div>
-        </section>
-
-        <section class="modal modal-login">
-          <h2 class="visually-hidden">Личный кабинет</h2>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label class="visually-hidden" for="user-login">Электронная почта</label>
-              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
-            </p>
-            <p>
-              <label class="visually-hidden" for="user-password">Пароль</label>
-              <input class="login-icon-password" id="user-password" type="password" name="password"
-                placeholder="Пароль">
-            </p>
-            <p>
-              <a class="restore" href="#">Забыли пароль?</a>
-            </p>
-            <p>
-              <a class="registration" href="#">Новая регистрация</a>
-            </p>
-            <button class="button" type="submit">
-              Войти
-            </button>
-          </form>
         </section>
       </header>
   </div>
@@ -168,11 +95,23 @@
           </section>
         </fieldset>
 
-        <fieldset>
-          <legend>Цена: 100 руб. – 500 руб.</legend>
-          <input type="range" min="100" max="500" value="50" step="1">
-          <input type="range" multiple min="50" max="450" step="1" value="50">
-        </fieldset>
+        <form action="#" method="get" oninput="rangeOutput.value=rangeLeft.value + ' - ' + rangeRight.value">
+          <div class="range">
+            <div class="range-runner range-runner-left">
+              <div class="visually-hidden">
+                <label for="range-left-field">Бегунок левый</label>
+                <input type="range" name="rangeLeft" id="range-left-field" min="0" max="50">
+              </div>
+            </div>
+            <div class="range-runner range-runner-right">
+              <div class="visually-hidden">
+                <label for="range-right-field">Бегунок правый</label>
+                <input type="range" name="rangeRight" id="range-right-field" min="51" max="100">
+              </div>
+            </div>
+          </div>
+          <output for="range-left-field range-right-field" name="rangeOutput">20 - 30</output>
+        </form>
 
         <fieldset>
           <legend>Жирность:</legend>
@@ -486,6 +425,51 @@
       </p>
     </div>
   </footer>
+
+  <section class="modal modal-busket">
+      <h3 class="visually-hidden">Товары в корзине</h3>
+      <form class="busket-form" action="https://#" method="post">
+        <table cellspacing="5">
+          <tr class="row">
+            <td class="visually-hidden">Удалить товар из корзины</td>
+            <td class="visually-hidden">Изображение товара</td>
+            <td class="visually-hidden">Название товара</td>
+            <td class="visually-hidden">Цена за килограмм</td>
+            <td class="visually-hidden">Общая стоимость товара</td>
+          </tr>
+          <tr class="row">
+            <td class="col-1">
+              <button type="button">Удалить товар из корзины</button>
+            </td>
+            <td class="col-2">
+              <img class="" src="img/catalog/product-1.jpg" width="10" height="10" alt="Удалить товар из корзины">
+
+            </td>
+            <td class="col-3">Пломбир с апельсиновым джемом</td>
+            <td class="col-4">1,5 кг х 200 руб.</td>
+            <td class="col-5">300 руб.</td>
+          </tr>
+          <tr class="row">
+            <td class="col-1">
+              <button type="button">Удалить товар из корзины</button> </td>
+            <td class="col-2">
+              <img class="" src="img/catalog/product-3.jpg" width="10" height="10" alt="Удалить товар из корзины">
+            </td>
+            <td class="col-3">Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td class="col-4">1,5 кг х 300 руб.</td>
+            <td class="col-5">450 руб.</td>
+          </tr>
+          <tr class="row">
+            <td class="col-1" colspan=«4»>Итого:</td>
+            <td class="col-5">750 руб.</td>
+          </tr>
+        </table>
+        <button class="button" type="submit">
+          Оформить заказ
+        </button>
+      </form>
+    </section>
+
 </body>
 
 </html>
