@@ -206,18 +206,18 @@ body {
 
 
 
-.site-navigation main a:hover,
-.user-navigation main a:hover,
-.site-navigation main :focus,
-.user-navigation main a:focus {
+.site-navigation .main a:hover,
+.user-navigation .main a:hover,
+.site-navigation .main a:focus,
+.user-navigation .main a:focus {
   background-color: #f7f6f3;
   color: #323232;
 
   border-radius: 50px;
 }
 
-.site-navigation main a:active,
-.user-navigation main a:active {
+.site-navigation .main a:active,
+.user-navigation .main a:active {
   box-shadow: inset 0 2px 1px #696969;
   background-color: #f8f7f4;
   color: #323232;
@@ -231,6 +231,7 @@ body {
 }
 
 .site-navigation .sub-site-navigation {
+
   position: absolute;
   top: 40px;
   left: -5px;
@@ -337,11 +338,12 @@ body {
   color: #323232;
 }
 
+/*
 .user-navigation .modal-search-form {
   position: absolute;
   right: 310px;
   top: 5px;
-}
+}*/
 
 
 .user-navigation .login-link {
@@ -403,7 +405,7 @@ body {
 }
 
 .user-navigation .full-busket-link {
-  position: relative;
+
   padding-left: 40px;
   margin: 0;
 
@@ -417,7 +419,7 @@ body {
   background-color: #f8f7f4;
   opacity: 0.99;
   padding-right: 10px;
-
+  position: relative;
 }
 
 .full-busket-link::before {
@@ -634,15 +636,21 @@ body {
 
   flex-grow: 1;
   position: relative;
+  padding: 20px;
 }
 
 .catalog-hits-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.catalog-hits-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+/*.catalog-hits-item:hover {
+  width: 293px;
+height: 405px;
+box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+background-color: #f8f7f4;
+opacity: 0.2;
+
+}*/
 
 .catalog-hits-item .catalog-hits-name {
   text-transform: none;
@@ -668,13 +676,15 @@ body {
   line-height: 45px;
 
   position: absolute;
-  left: 5;
-  top: 180px;
+  left: 15px;
+  top: 195px;
+  white-space: nowrap;
 }
 
 .catalog-hits-item-price b {
-
+  white-space: pre;
   text-align: center;
+
 }
 
 .weight {
@@ -683,6 +693,8 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
+  padding: 0;
+  margin: 0;
 }
 
 .features {
@@ -1011,20 +1023,31 @@ body {
 }
 
 
-.filter {
-  width: 855px;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
+.filters {
+margin-bottom: 56px;
+font-size: 0;
 }
 
 .filter fieldset {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px 14px 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+}
+input {
+  border: none;
+}
+fieldset:active{
   border: none;
 }
 
-.filter legend {
+.filters legend {
+  margin-left: 11px;
+  margin-bottom: 7px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -1047,49 +1070,7 @@ body {
   opacity: 0.5;
 }
 
-output {
-  min-width: 20px;
-  padding: 15px;
-  border: thin solid black;
-  border-radius: 3px;
-}
 
-.range {
-  position: relative;
-  margin-bottom: 50px;
-  width: 200px;
-  height: 5px;
-  background-color: lightgrey;
-  border-radius: 3px;
-}
-
-.range-runner {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 6px grey;
-}
-
-.range-runner-left {
-  top: -9px;
-  left: 20px;
-}
-
-.range-runner-right {
-  top: -9px;
-  right: 20px;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 
 .catalog {
   margin-bottom: 60px;
@@ -1098,6 +1079,7 @@ output {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+
 
   padding: 0;
   text-align: center;
@@ -1108,28 +1090,32 @@ output {
 .catalog-item {
 
   flex-basis: 25%;
-
-
   flex-grow: 1;
 
   position: relative;
+
 }
 
-.catalog-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+/*.catalog-item:hover {
+  width: 293px;
+height: 405px;
+box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+background-color: #f8f7f4;
+opacity: 0.2;
+
+}*/
 
 .catalog-item .catalog-item-name {
+  display: block;
   text-transform: none;
   text-decoration: underline;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  text-align: center;
   padding-left: 25px;
-  /*поработать с отцентровкой текста по макету*/
-
+  padding-right: 25px;
+  text-align: center;
 }
 
 
@@ -1338,13 +1324,13 @@ output {
   color: #ffbc9e;
 }
 
+
+
 /* Всплывающая форма */
-.user-navigation>li>.login {
-  position: relative;
-}
 
 
 .modal {
+  position: fixed;
 
   color: #323232;
 
@@ -1364,25 +1350,30 @@ output {
 }
 
 .modal-search-form {
-  display: none;
+  
   position: absolute;
   top: 65px;
   right: 475px;
+
   width: 341px;
 
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
 
+  padding: 20px 15px;
+
   border: 1px solid #d3d3d2;
+
 }
 
 .search-form input[type="text"] {
+
   box-sizing: border-box;
+  width: 340px;
 
-  height: 44px;
+  padding: 10px 15px;
 
-  padding: 15px 20px;
-  margin: 15px 20px;
+
   color: #999999;
 
   font-size: 14px;
@@ -1395,7 +1386,7 @@ output {
 }
 
 .modal-login {
-  display: none;
+  
 
   position: absolute;
   top: 65px;
@@ -1412,7 +1403,7 @@ output {
   box-sizing: border-box;
   width: 241px;
   height: 44px;
-
+  padding: 10px 15px;
 
   color: #999999;
 
@@ -1461,8 +1452,8 @@ output {
 }
 
 .modal-feedback {
-  display: none;
-  position: absolute;
+  
+  position: fixed;
   top: 40%;
   right: 35%;
   width: 478px;
@@ -1470,6 +1461,8 @@ output {
   background-color: #f8f7f4;
 
   border: 1px solid #d3d3d2;
+
+  z-index: 5;
 }
 
 .modal-close {
@@ -1512,7 +1505,7 @@ output {
 
 .feedback-form {
   padding: 18px 18px;
- 
+
 }
 
 .feedback-form h2 {
@@ -1589,19 +1582,195 @@ output {
   right: 25px;
   bottom: 25px;
 }
-/*
-.overlay{
+
+.overlay {
   display: none;
-position: fixed;
-top:0;
-left:0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 
-z-index: 1;
+  z-index: 1;
 
-background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
-*/
-/* Всплывающая форма */
+
+
+.modal-busket {
+  
+  position: absolute;
+  top: 65px;
+  right: 255px;
+
+  width: 539px;
+
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+
+  padding-top: 20px;
+  padding-right: 14px;
+  padding-bottom: 19px;
+  padding-left: 17px;
+
+  border: 1px solid #d3d3d2;
+
+}
+
+.full-busket:hover .modal-busket {
+  display: block;
+}
+
+.modal-busket .button-delete-item::before,
+.modal-busket .button-delete-item::after {
+  width: 14px;
+  height: 1px;
+  background-color: #515050;
+}
+
+.button-delete-item {
+  width: 11px;
+  height: 11px;
+}
+
+.item-1 .button-delete-item {
+  top: 26px;
+  left: 17px;
+}
+
+.item-2 .button-delete-item {
+  top: 80px;
+  left: 17px;
+}
+
+.busket-content {
+  margin-bottom: 15px;
+}
+
+.busket-content tr {
+  display: block;
+
+}
+
+.busket-content td {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.item-img {
+  margin-right: 7px;
+  padding-left: 18px;
+}
+
+.item-1 .item-img {
+  margin-top: -8px;
+}
+
+.item-2 .item-img {
+  margin-top: -9px;
+}
+
+.item-img img {
+  border-radius: 50%;
+}
+
+.item-name {
+  margin-right: 20px;
+  width: 230px;
+
+}
+
+.item-price {
+  margin-left: -3px;
+  margin-right: 25px;
+  color: #999999;
+}
+
+.item-1 {
+  margin-bottom: 21px;
+  padding-top: 6px;
+  color: #323232;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.item-2 {
+  margin-bottom: 29px;
+  padding-top: 2px;
+  color: #323232;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.total {
+  margin-right: -35px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #323232;
+  text-align: right;
+}
+
+.total:before {
+  content: "";
+  position: absolute;
+  bottom: 115px;
+  left: 16px;
+  width: 510px;
+  height: 1px;
+  background-color: #cacac7;
+
+}
+
+.button-delete-item {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 19px;
+  height: 19px;
+  outline: none;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.button-delete-item::before,
+.button-delete-item::after {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  left: -1px;
+
+  width: 22px;
+  height: 2px;
+
+  background-color: black;
+}
+
+.button-delete-item::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button-delete-item::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.busket-button {
+
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+}
