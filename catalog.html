@@ -73,10 +73,11 @@
   </div>
 
   <main class="catalog-container">
-    <ul class="creame-icecreame">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li class="creame-icecreame-current">Сливочное</li>
+
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+      <li class="breadcrumbs-item breadcrumbs-item-current">Сливочное</li>
     </ul>
     <h1 class="page-title">Сливочное мороженое</h1>
 
@@ -336,13 +337,23 @@
       </ul>
     </section>
     <ul class="pagination-list">
-      <li class="pagination-item prev disabled"><a href="#" class="">Назад</a></li>
+      <li class="pagination-item pagination-item-back pagination-item-disabled"><a href="#" class=""><span>Назад</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.5">
+        <path d="M0.762966 7.35797L6.27097 12.867C6.46868 13.0647 6.78925 13.0647 6.98697 12.867C7.18468 12.6693 7.18468 12.3487 6.98697 12.151L1.83697 6.99997L6.98797 1.84997C7.17348 1.65024 7.16786 1.33957 6.97524 1.14668C6.78262 0.953786 6.47196 0.947732 6.27197 1.13297L0.762966 6.64197C0.667453 6.73662 0.613722 6.86551 0.613722 6.99997C0.613722 7.13443 0.667453 7.26332 0.762966 7.35797Z" fill="#C1C6CE"/>
+        </g>
+        </svg>
+        </a></li>
       <li class="pagination-item paginator-item-current"><a href="#">1</a></li>
       <li class="pagination-item"><a href="#">2</a></li>
       <li class="pagination-item"><a href="#">3</a></li>
       <li class="pagination-item"><a href="#">4</a></li>
       <li class="pagination-item"><a href="#">5</a></li>
-      <li class="pagination-item next"><a href="#">Вперёд</a></li>
+      <li class="pagination-item pagination-item-next"><a href="#"><span>Вперёд</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.5">
+        <path d="M0.762966 7.35797L6.27097 12.867C6.46868 13.0647 6.78925 13.0647 6.98697 12.867C7.18468 12.6693 7.18468 12.3487 6.98697 12.151L1.83697 6.99997L6.98797 1.84997C7.17348 1.65024 7.16786 1.33957 6.97524 1.14668C6.78262 0.953786 6.47196 0.947732 6.27197 1.13297L0.762966 6.64197C0.667453 6.73662 0.613722 6.86551 0.613722 6.99997C0.613722 7.13443 0.667453 7.26332 0.762966 7.35797Z" fill="#C1C6CE"/>
+        </g>
+        </svg>
+        </a></li>
     </ul>
     </section>
   </main>
@@ -416,7 +427,7 @@
         </tr>
         <tr class="item-1">
           <td class="delete">
-            <button type="button" class="button-delete-item ">Удалить товар из корзины</button></td>
+            <button type="button" class="button-delete-item "><span class="visually-hidden">Удалить товар из корзины</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg></button></td>
           <td class="item-img">
             <img class="" src="img/catalog/product-1.jpg" width="33" height="33" alt="Удалить товар из корзины">
 
@@ -428,7 +439,7 @@
         </tr>
         <tr class="item-2">
           <td class="delete">
-            <button type="button" class="button-delete-item">Удалить товар из корзины</button> </td>
+            <button type="button" class="button-delete-item"><span class="visually-hidden">Удалить товар из корзины</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg></button></td>
           <td class="item-img">
             <img class="" src="img/catalog/product-3.jpg" width="33" height="33" alt="Удалить товар из корзины">
           </td>
@@ -441,9 +452,11 @@
           <td colspan=«6»>Итого: 750 руб.</td>
         </tr>
       </table>
+      
       <button class="button busket-button" type="submit">
         Оформить заказ
       </button>
+    
     </form>
   </section>
 

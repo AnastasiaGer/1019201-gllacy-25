@@ -210,21 +210,20 @@
       <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
       <ul class="features-list">
         <li class="feature-item1">
-          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
-            и проверенных временем технологий.</p>
+          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+          и проверенных временем технологий.
         </li>
         <li class="feature-item2">
-          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-            связывает долговременное сотрудничество.</p>
+          Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+          связывает долговременное сотрудничество.
         </li>
         <li class="feature-item3">
-          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
-            дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-          </p>
+          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+          дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
         </li>
         <li class="feature-item4">
-          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
-            растаять в пути и позволяет сохранить превосходный вкус.</p>
+          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+          растаять в пути и позволяет сохранить превосходный вкус.
         </li>
       </ul>
     </section>
@@ -241,12 +240,9 @@
         <p class="subscription-info-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
           вкусного,
           что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <form class="subscription-info" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="subscription-login">Электронная почта</label>
-            <input id="subscription-login" class="login-icon-user" type="text" name="login"
-              placeholder="Электронная почта">
-          </p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden">Электронная почта</label>
+          <input class="subscription-mail" type="text" name="mail" placeholder="Электронная почта">
           <button class="button button-subscription" type="submit">
             Отправить
           </button>
@@ -262,7 +258,6 @@
         <img src="img/index/map.png"
           alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
-
       <div class="contacts">
         <h2>Адрес главного офиса и офлайн-магазина</h2>
         <p>
@@ -352,51 +347,50 @@
   <section class="modal modal-login">
     <h2 class="visually-hidden">Личный кабинет</h2>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label class="visually-hidden" for="user-login">Электронная почта</label>
-        <input id="user-login" type="text" name="login" placeholder="Электронная почта">
-      </p>
-      <p>
-        <label class="visually-hidden" for="user-password">Пароль</label>
-        <input id="user-password" type="password" name="password" placeholder="Пароль">
-      </p>
-      <p class="login-help">
-          <a class="restore" href="#">Забыли пароль?</a>
-          <a class="registration" href="#">Новая регистрация</a>
-      </p>
+      <label class="visually-hidden">Электронная почта</label>
+      <input class="user-login" type="text" name="login" placeholder="Электронная почта">
+
+      <label class="visually-hidden">Пароль</label>
+      <input class="user-password" type="password" name="password" placeholder="Пароль">
+
+      <div class="login-help">
+        <a class="restore" href="#">Забыли пароль?</a>
+        <a class="registration" href="#">Новая регистрация</a>
+      </div>
       <button class="button" type="submit">Войти</button>
     </form>
   </section>
 
 
 
-  <section class="modal modal-feedback">
+  <section class="modal modal-feedback overlay">
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <h2>Мы обязательно Вам ответим!</h2>
-      <p>
-        <label class="visually-hidden" for="user-first-name">Как Вас зовут?</label>
-        <input id="user-first-name" class="colortext" type="text" name="name" placeholder="Как Вас зовут?">
-      </p>
-      <p>
-        <label class="visually-hidden" for="user-email">Ваша почта для ответа?</label>
-        <input id="user-email" class="colortext" type="text" name="mail" placeholder="Ваша почта для ответа?">
-      </p>
-      <p>
-        <label class="visually-hidden" for="user-feedback">Напишите что-нибудь</label>
-        <textarea id="user-feedback" class="colortext" type="text" name="feedback" 
-        placeholder="Напишите что-нибудь..." rows="6"></textarea>
-      </p>
+
+      <label class="visually-hidden" for="user-first-name">Как Вас зовут?</label>
+      <input id="user-first-name" class="colortext" type="text" name="name" placeholder="Как Вас зовут?">
+
+      <label class="visually-hidden" for="user-email">Ваша почта для ответа?</label>
+      <input id="user-email" class="colortext" type="text" name="mail" placeholder="Ваша почта для ответа?">
+
+      <label class="visually-hidden" for="user-feedback">Напишите что-нибудь</label>
+      <textarea id="user-feedback" class="colortext" type="text" name="feedback" placeholder="Напишите что-нибудь..."
+        rows="6"></textarea>
+
       <button class="button" type="submit">
         Отправить
       </button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span><svg
+        xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+        <path fill="#231F20"
+          d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z" />
+        </svg></button>
   </section>
-  
-<div class="overlay"></div>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=cd34823f-0b8b-4aba-be82-72027d93120e&lang=en_US"></script>
-        <script src="js/script.min.js"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=cd34823f-0b8b-4aba-be82-72027d93120e&lang=en_US"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 
