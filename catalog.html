@@ -13,31 +13,36 @@
 
 <body>
   <div class="container">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <div class="site-navigation-container">
-          <a href="index.html" class="main-header-logo">
-            <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глейси»">
-          </a>
 
-          <ul class="site-navigation">
-            <li class="main"><a href="catalog.html">Каталог</a>
-              <ul class="sub-site-navigation">
-                <li class="new"><a href="#">Новинки</a></li>
-                <li class="creamy"><a href="catalog.html">Сливочное</a></li>
-                <li class="sorbet"><a href="#">Щербеты</a></li>
-                <li class="fruit-ice"><a href="#">Фруктовый лед</a></li>
-                <li class="melorin"><a href="#">Мелорин</a></li>
-              </ul>
-            </li>
-            <li class="main"><a href="delivery.html">Доставка и оплата</a></li>
-            <li class="main"><a href="info.html">О компании</a></li>
-          </ul>
-        </div>
+    <header class="main-header">
+        <nav class="main-navigation">
+          <div class="site-navigation-container">
+            <a class="main-header-logo" href="index.html">
+              <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глейси»">
+            </a>
+
+            <ul class="site-navigation">
+              <li class="site-navigation-item current"><a class="main " href="catalog.html">Каталог</a>
+                <section class="sub-site-navigation">
+                  <h2 class="visually-hidden">Подменю каталога</h2>
+                  <ul class="sub-site-navigation-list">
+                    <li class="sub-site-navigation-item "><a class="new" href="#">Новинки</a></li>
+                    <li class="sub-site-navigation-item"><a href="catalog.html">Сливочное</a></li>
+                    <li class="sub-site-navigation-item"><a href="#">Щербеты</a></li>
+                    <li class="sub-site-navigation-item"><a href="#">Фруктовый лед</a></li>
+                    <li class="sub-site-navigation-item"><a href="#">Мелорин</a></li>
+                  </ul>
+                </section>
+              </li>
+              <li><a class="main" href="delivery.html">Доставка и оплата</a></li>
+              <li><a class="main" href="info.html">О компании</a></li>
+            </ul>
+          </div>
+
 
         <ul class="user-navigation">
           <li class="search">
-            <button class="button-search" type="submit"><span class="visually-hidden">Поиск</span><svg
+            <button class="main button-search" type="submit"><span class="visually-hidden">Поиск</span><svg
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"
                 viewBox="0 0 17 17">
                 <path fill="#fff"
@@ -47,13 +52,14 @@
           </li>
 
           <li class="login">
-            <a class="login-link" href="login.html">
-              Вход
-            </a>
-          </li>
+              <a class="main login-link" href="login.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+                <span>Вход</span>
+              </a>
+            </li>
 
           <li class="full-busket">
-            <a class="full-busket-link" href="busket.html">
+            <a class="main full-busket-link" href="busket.html">
               2 товара
             </a>
           </li>
