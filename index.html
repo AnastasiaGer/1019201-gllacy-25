@@ -18,7 +18,7 @@
   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
   
     <div class="site-wrapper">
-      <div class="container">
+      
 
         <header class="main-header">
           <nav class="main-navigation">
@@ -132,7 +132,7 @@
               </li>
             </ul>
           </section>
-      </div>
+      
 
 
       <div class="specials">
@@ -140,12 +140,13 @@
           <h2 class="visually-hidden">Спецпредложения</h2>
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <form action="http://echo.htmlacademy.ru" method="post">
+          <form action="http://echo.htmlacademy.ru" method="get">
             <input type="hidden" name="amount" value="2">
             <button class="button button-specials-1" type="submit">
               Хочу варенье!
             </button>
-        </section>
+          </form>
+          </section>
 
         <section class="specials-2">
           <h2 class="visually-hidden">Спецпредложения</h2>
@@ -153,11 +154,12 @@
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
             бесплатно.
           </p>
-          <form action="http://echo.htmlacademy.ru" method="post">
+          <form action="http://echo.htmlacademy.ru" method="get">
             <input type="hidden" name="amount" value="2">
             <button class="button button-specials-2" type="submit">
               Хочу шоколадки!
             </button>
+          </form>
         </section>
       </div>
 
@@ -214,7 +216,7 @@
           </li>
 
           <li class="catalog-hits-item">
-            <a href="catalog-item.html"></a>
+            <a href="catalog-item.html">
             <p class="catalog-hits-item-image">
               <img src="img/index/hit-product-4.jpg" width="267" height="267"
                 alt="Сливочное крем-брюле с карамельной подливкой">
@@ -358,7 +360,7 @@
 
       <section class="modal modal-search-form">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <label class="visually-hidden" for="search-form">Что ищем?</label>
+          <label class="visually-hidden">Что ищем?</label>
           <input class="search-form" type="text" name="search" value="" placeholder="Что ищем?">
         </form>
       </section>
@@ -394,7 +396,7 @@
           <input id="user-email" class="colortext" type="text" name="mail" placeholder="Ваша почта для ответа?">
 
           <label class="visually-hidden" for="user-feedback">Напишите что-нибудь</label>
-          <textarea id="user-feedback" class="colortext" type="text" name="feedback"
+          <textarea id="user-feedback" class="colortext" name="feedback"
             placeholder="Напишите что-нибудь..." rows="6"></textarea>
 
           <button class="button" type="submit">
