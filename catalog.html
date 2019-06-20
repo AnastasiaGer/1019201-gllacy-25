@@ -98,88 +98,92 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
 
-        <div class="filter-wrap">
-          <fieldset class="sorting">
-            <legend>Сортировка:</legend>
-            <select class="sort-by customize-form" name="sort-by">
-              <option value="popular">по популярности</option>
-              <option value="cheap">сначала недорогие</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="fat-range">по жирности</option>
-            </select>
-          </fieldset>
-        </div>
+        <fieldset class="sort">
+            
+          <legend>Сортировка:</legend>
+          <div class="custom-select open-select" style="width:200px;">
+          <select class="sort-selection customize-form">
+            <option value="popular" selected>по популярности</option>
+            <option value="popular">по популярности</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="by-fatness">по жирности</option>
+          </select>
+          </div>
+        </fieldset>
 
-        <div class="filter-wrap">
-          <fieldset class="filter-price">
-            <legend>Цена: 100 руб. – 500 руб.</legend>
-            <div class="filter-price-form customize-form">
-              <button class="price-min" type="button">От</button>
-              <button class="price-max" type="button">До</button>
+        <fieldset class="filter-price">
+
+          <legend>Цена: 100 руб. – 500 руб.</legend>
+          <div class="customize-form">
+            <div class="range">
+              <div class="range-runner range-runner-left">
+                <div class="visually-hidden">
+                  <label for="range-left-field">Бегунок левый</label>
+                  <input type="range" name="rangeLeft" id="range-left-field" min="0" max="50">
+                </div>
+              </div>
+              <div class="range-runner range-runner-right">
+                <div class="visually-hidden">
+                  <label for="range-right-field">Бегунок правый</label>
+                  <input type="range" name="rangeRight" id="range-right-field" min="51" max="100">
+                </div>
+              </div>
             </div>
-          </fieldset>
-        </div>
+          </div>
+        </fieldset>
 
-        <div class="filter-wrap">
-          <fieldset>
-            <legend>Жирность:</legend>
-            <ul class="filter-fat customize-form">
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                  value="zero" id="filter-zero">
-                <label for="filter-zero">0%</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                value="under-ten" id="filter-under-ten" checked>
-                <label for="filter-under-ten">до 10%</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                value="under-thirty" id="filter-under-thirty">
-                <label for="filter-under-thirty">до 30%</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                value="upper-thirty" id="filter-upper-thirty">
-                <label for="filter-upper-thirty">выше 30%</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
 
-        <div class="filter-wrap">
-          <fieldset>
-            <legend>Наполнители:</legend>
-            <ul class="filter-fillers customize-form">
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate"
-                  id="filter-chocolate" checked>
-                <label for="filter-chocolate">шоколадные</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-powders"
-                  id="filter-sugar-powders" checked>
-                <label for="filter-sugar-powders">сахарные присыпки</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits"
-                  id="filter-fruits">
-                <label for="filter-fruits">фрукты</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups"
-                  id="filter-syrups">
-                <label for="filter-syrups">сиропы</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams"
-                  id="filter-jams">
-                <label for="filter-jams">джемы</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
+        <fieldset class="fatness">
+          <legend>Жирность:</legend>
+          <div class="customize-form">
+            <label class="fatness-label">
+              <input type="radio" name="fatness" value="0">
+              <span class="fatness-value">0%</span>
+            </label>
+            <label class="fatness-label">
+              <input type="radio" name="fatness" value="before-10" checked>
+              <span class="fatness-value">до 10%</span>
+            </label>
+            <label class="fatness-label">
+              <input type="radio" name="fatness" value="before-30">
+              <span class="fatness-value">до 30%</span>
+            </label>
+            <label class="fatness-label">
+              <input type="radio" name="fatness" value="above-30">
+              <span class="fatness-value">выше 30%</span>
+            </label>
+          </div>
+        </fieldset>
+
+
+        <fieldset class="filler">
+          <legend>Наполнители:</legend>
+          <div class="customize-form">
+            <label class="filler-label filler-label-1">
+              <input class="filler-toggle" type="checkbox" name="chocolate-filler" value="chocolate" checked>
+              <span class="filler-name">шоколадные</span>
+            </label>
+            <label class="filler-label filler-label-2">
+              <input class="filler-toggle" type="checkbox" name="sugar-filler" value="sugar" checked>
+              <span class="filler-name">сахарные присыпки</span>
+            </label>
+            <label class="filler-label filler-label-3">
+              <input class="filler-toggle" type="checkbox" name="fruits-filler" value="fruits">
+              <span class="filler-name">фрукты</span>
+            </label>
+            <label class="filler-label filler-label-4">
+              <input class="filler-toggle" type="checkbox" name="syrup-filler" value="syrup">
+              <span class="filler-name">сиропы</span>
+            </label>
+            <label class="filler-label filler-label-5">
+              <input class="filler-toggle" type="checkbox" name="jam-filler" value="jam">
+              <span class="filler-name">джемы</span>
+            </label>
+          </div>
+        </fieldset>
+
+
 
         <button type="submit" class="filter-button">
           Применить
@@ -381,8 +385,8 @@
     </section>
 
     <ul class="pagination-list">
-      <li class="pagination-item pagination-item-back pagination-item-disabled"><a href="#"><span>Назад</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+      <li class="pagination-item pagination-item-back pagination-item-disabled"><a href="#"><span>Назад</span><svg
+            width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.5">
               <path
                 d="M0.762966 7.35797L6.27097 12.867C6.46868 13.0647 6.78925 13.0647 6.98697 12.867C7.18468 12.6693 7.18468 12.3487 6.98697 12.151L1.83697 6.99997L6.98797 1.84997C7.17348 1.65024 7.16786 1.33957 6.97524 1.14668C6.78262 0.953786 6.47196 0.947732 6.27197 1.13297L0.762966 6.64197C0.667453 6.73662 0.613722 6.86551 0.613722 6.99997C0.613722 7.13443 0.667453 7.26332 0.762966 7.35797Z"
@@ -400,7 +404,7 @@
             <g opacity="0.5">
               <path
                 d="M0.762966 7.35797L6.27097 12.867C6.46868 13.0647 6.78925 13.0647 6.98697 12.867C7.18468 12.6693 7.18468 12.3487 6.98697 12.151L1.83697 6.99997L6.98797 1.84997C7.17348 1.65024 7.16786 1.33957 6.97524 1.14668C6.78262 0.953786 6.47196 0.947732 6.27197 1.13297L0.762966 6.64197C0.667453 6.73662 0.613722 6.86551 0.613722 6.99997C0.613722 7.13443 0.667453 7.26332 0.762966 7.35797Z"
-                fill="#C1C6CE" />
+                fill=#fff />
             </g>
           </svg>
         </a></li>
@@ -465,27 +469,27 @@
   </footer>
 
   <section class="modal modal-search-form">
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search-form-input">Что ищем?</label>
-        <input class="search-form" id="search-form-input" type="text" name="search" value="" placeholder="Что ищем?">
-      </form>
-    </section>
+    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+      <label class="visually-hidden" for="search-form-input">Что ищем?</label>
+      <input class="search-form" id="search-form-input" type="text" name="search" value="" placeholder="Что ищем?">
+    </form>
+  </section>
 
 
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+  <section class="modal modal-login">
+    <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 
-        <input type="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
-        <input type="password" placeholder="Пароль" aria-label="Пароль" required>
+      <input type="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
+      <input type="password" placeholder="Пароль" aria-label="Пароль" required>
 
-        <div class="login-help">
-          <a class="restore" href="#">Забыли пароль?</a>
-          <a class="registration" href="#">Новая регистрация</a>
-        </div>
-        <button class="button" type="submit">Войти</button>
-      </form>
-    </section>
+      <div class="login-help">
+        <a class="restore" href="#">Забыли пароль?</a>
+        <a class="registration" href="#">Новая регистрация</a>
+      </div>
+      <button class="button" type="submit">Войти</button>
+    </form>
+  </section>
 
   <section class="modal modal-busket">
     <h3 class="visually-hidden">Товары в корзине</h3>
@@ -500,11 +504,12 @@
         </tr>
         <tr class="item-1">
           <td class="delete">
-            <button type="button" class="button-delete-item "><span class="visually-hidden">Удалить товар из
+            <a class="button-delete-item" href="#" title="Удалить товар из
+              корзины"><span class="visually-hidden">Удалить товар из
                 корзины</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
                 <path fill="#231F20"
                   d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" />
-              </svg></button></td>
+              </svg></a></td>
           <td class="item-img">
             <img class="" src="img/catalog/product-1.jpg" width="33" height="33" alt="Удалить товар из корзины">
 
@@ -516,11 +521,12 @@
         </tr>
         <tr class="item-2">
           <td class="delete">
-            <button type="button" class="button-delete-item"><span class="visually-hidden">Удалить товар из
+            <a class="button-delete-item" href="#" title="Удалить товар из
+              корзины"><span class="visually-hidden">Удалить товар из
                 корзины</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
                 <path fill="#231F20"
                   d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" />
-              </svg></button></td>
+              </svg></a></td>
           <td class="item-img">
             <img class="" src="img/catalog/product-3.jpg" width="33" height="33" alt="Удалить товар из корзины">
           </td>
@@ -540,7 +546,7 @@
 
     </form>
   </section>
-
+  <script src="js/1.js"></script>
 </body>
 
 </html>
