@@ -224,6 +224,13 @@ body {
   background-color: #ffffff;
 }
 
+#product-1:checked~.site-wrapper label:hover {
+
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #FFFFFF;
+
+}
+
 /*ХЕДЕР*/
 
 .main-navigation {
@@ -406,21 +413,18 @@ body {
 .user-navigation {
   display: flex;
   align-items: center;
-  vertical-align: center;
 
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  margin-right: 2px;
-
+  margin-top: 22px;
 }
 
 .user-navigation .login-link,
 .user-navigation .busket-link {
   box-sizing: border-box;
 
-  background-color: rgba(247, 246, 243, 0.3);
-  margin: 0;
+  background-color: rgba(247, 246, 243, 0.2);
 
   color: #ffffff;
   border: 0px solid #FFFFFF;
@@ -437,15 +441,11 @@ body {
   margin-left: 11px;
 }
 
-.search {
-  display: block;
-}
 
 .button-search {
-  color: #F7F6F3;
-  padding: 7px 7px;
-  border-radius: 17px;
-  background-color: rgba(247, 246, 243, 0.3);
+  font: 0;
+  padding: 7px;
+  background-color: rgba(247, 246, 243, 0.2);
   width: 33px;
   height: 33px;
 
@@ -471,22 +471,20 @@ body {
   color: #323232;
 }
 
-.login {
-  display: block;
-
-  margin: 0;
-  padding: 0;
-}
-
 a.login-link {
   text-decoration: none;
-  display: flex;
-  padding: 6px 15px 5px 15px;
+
+  padding: 6.5px 17px 8px 44px;
   border-radius: 25px;
   align-items: center;
+  vertical-align: middle;
+  position: relative;
 }
 
 .login-link svg {
+  position: absolute;
+  top: 6px;
+  left: 16px;
   margin-right: 7px;
   vertical-align: middle;
 }
@@ -501,25 +499,21 @@ a.login-link {
   color: #323232;
 }
 
-.busket {
-  display: block;
-  margin: 0;
-  padding: 0;
-
-}
-
 a.busket-link {
   text-decoration: none;
-  padding: 6px 15px 6px 15px;
+  padding: 6.5px 17px 7px 45px;
   border-radius: 25px;
-  display: flex;
+  position: relative;
   align-items: center;
 }
 
 .busket-link svg {
-
+  position: absolute;
+  top: 7px;
+  left: 15px;
   margin-right: 8px;
   vertical-align: middle;
+
 }
 
 
@@ -1287,25 +1281,12 @@ a.full-busket-link {
   color: #ffffff;
 }
 
-.custom-select {
-  position: relative;
-  background: #a1b4a9;
-  border: 0px solid #FFFFFF;
-  border-radius: 50px;
-  color: #ffffff;
-  padding: 0;
-  margin: 0;
-
-}
-
-.custom-select select {
-  display: none;
-  /*hide original SELECT element: */
-}
-
-.select-selected {
+.sort-selection {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
-  padding: 12px 40px 9px 16px;
+  padding: 8px 10px 8px 16px;
   border: none;
   box-shadow: none;
   width: 192px;
@@ -1313,70 +1294,30 @@ a.full-busket-link {
   background-image: url("../img/catalog/select-arrow.svg");
   background-position: 170px center;
   background-repeat: no-repeat;
-  background-size: 11px 10px;
-  color: #ffffff;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  vertical-align: center;
   outline: none;
   cursor: pointer;
-  margin-right: 3px;
 }
 
-.select-items div {
-  color: #323232;
-  padding: 8px 16px;
-
-  cursor: pointer;
-}
-
-.select-items {
-  position: absolute;
-  background-color: #fff;
+.sort-selection option {
   text-indent: 13px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover {
-  background-color: #1e90ff;
 }
 
 select::-ms-expand {
   display: none;
 }
 
-.select-selected:hover,
-.select-selected:focus {
-  padding: 12px 0px 9px 16px;
-  background-image: url("../img/catalog/icon-down-dir.svg");
-  color: #323232;
-  background-position: 173px center;
-  background-repeat: no-repeat;
-}
-
-.select-selected .open-select {
+.sort-selection:focus {
   background-color: #ffffff;
-  padding: 12px 0px 9px 16px;
   background-image: url("../img/catalog/icon-down-dir.svg");
   color: #323232;
-  background-position: 173px center;
-  background-repeat: no-repeat;
 }
-
-
-
 
 .filter-price .customize-form {
   position: absolute;
@@ -1389,7 +1330,6 @@ select::-ms-expand {
 }
 
 .range {
-
 
   position: relative;
   margin-top: 18px;
@@ -1432,14 +1372,15 @@ select::-ms-expand {
 
 .fatness {
   width: 415px;
-
 }
 
-.fatness .customize-form {
-  padding: 9px 7px 3px 10px;
-  max-width: 415px;
-  font-size: 0;
+.filter ul {
+  display: flex;
+  padding: 0;
   margin: 0;
+
+  list-style: none;
+  line-height: 18px;
 }
 
 input[name="fatness"] {
@@ -1447,16 +1388,12 @@ input[name="fatness"] {
 }
 
 .fatness-label {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 18px;
+  margin-left: 17px;
+  margin-top: 8px;
 }
 
-.fatness-label:last-child {
-  margin-right: 0;
-}
 
-.fatness-value {
+.fatness-label label {
   position: relative;
   padding-left: 32px;
   font-size: 16px;
@@ -1466,126 +1403,111 @@ input[name="fatness"] {
   cursor: pointer;
 }
 
-.fatness-value::before {
-  content: "";
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  top: 4px;
-  left: 6px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #a9bbb1;
-  box-shadow: 0 0 0 3px #a9bbb1, 0 0 0 4px rgba(248, 247, 244, 1);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-input[name="fatness"]:checked~.fatness-value::before {
-  background-color: rgba(248, 247, 244, 1);
-}
-
-.fatness-value:hover::before {
-  box-shadow: none;
-  box-shadow: 0 0 0 3px #a9bbb1, 0 0 0 5px rgba(248, 247, 244, 1);
-}
-
-input[name="fatness"]:disabled~.fatness-value::before,
-input[name="fatness"]:disabled~.fatness-value:hover::before {
-  width: 12px;
-  height: 12px;
-  box-shadow: 0 0 0 4px #a9bbb1, 0 0 0 5px rgba(248, 247, 244, 0.4);
-}
-
-input[name="fatness"]:disabled:checked~.fatness-value::before,
-input[name="fatness"]:disabled:checked~.fatness-value:hover::before {
-  background-color: rgba(248, 247, 244, 0.4);
-}
-
-.selection-form .filler {
-  margin-right: 14px;
-}
-
-.filler .customize-form {
-  padding: 8px 14px 3px 12px;
-  min-width: 702px;
-  max-width: 710px;
-  font-size: 0;
-}
-
-.filler-toggle {
-  display: none;
-}
-
-.filler-label {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  padding-bottom: 5px;
-  margin-right: 20px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.filler-label-3 {
-  margin-right: 24px;
-}
-
-.filler-label:last-child {
-  margin-right: 0;
-}
-
-.filler-name {
-  padding-left: 32px;
-}
-
-.filler-name::before {
+.filter-input-radio+label::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid rgba(248, 247, 244, 1);
-  border-radius: 3px;
-}
 
-.filler-name:hover::before {
+  position: absolute;
+  left: 1px;
+  top: 0px;
+
   width: 16px;
   height: 16px;
-  border-width: 2px;
+
+  border: 3px solid #fff;
+  opacity: 0.8;
+  border-radius: 50%;
 }
 
-.filler-name::after {
+.filter-input:disabled+label {
+
+  opacity: 0.5;
+}
+
+.filter-input-radio:checked+label::after {
+  content: "";
+
+  position: absolute;
+  top: 6.5px;
+  left: 7.5px;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+
+
+.fatness-label label:hover::before,
+.fatness-label label:hover::after {
+  opacity: 1;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+
+  margin-left: 45px;
+  margin-right: 11px;
+  margin-top: 8px;
+}
+
+
+.filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  display: none;
-  top: 3px;
-  left: 7px;
+  left: -30px;
+  top: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #fff;
+  opacity: 0.8;
+  border-radius: 15%;
+}
+
+.filter-input-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+
+  top: 0px;
+  left: -21px;
   width: 4px;
-  height: 8px;
+  height: 12px;
   border-bottom: 3px solid rgba(248, 247, 244, 1);
   border-right: 3px solid rgba(248, 247, 244, 1);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.filler-toggle:checked~.filler-name::after {
-  display: block;
+.filter-option label:hover::before,
+.filter-option label:hover::after {
+  opacity: 1;
 }
-
-.filler-toggle:disabled~.filler-name:before,
-.filler-toggle:disabled~.filler-name:hover::before {
-  width: 18px;
-  height: 18px;
-  border: 1px solid rgba(248, 247, 244, 0.4);
-}
-
-.filler-toggle:disabled~.filler-name::after {
-  border-color: rgba(248, 247, 244, 0.4);
-}
-
-
 
 .filter-button {
 
@@ -1630,13 +1552,12 @@ input[name="fatness"]:disabled:checked~.fatness-value:hover::before {
   position: relative;
   width: 267px;
 
-  margin:0;
+  margin: 0;
   margin-right: 26px;
   margin-bottom: 36px;
 }
 
-.catalog-item:nth-child(4n+4)
-{
+.catalog-item:nth-child(4n+4) {
   margin-right: 0px;
 }
 
@@ -1645,7 +1566,7 @@ input[name="fatness"]:disabled:checked~.fatness-value:hover::before {
   position: absolute;
 
   width: 293px;
-  height: 330.5px;
+  height: 102.8%;
 
   top: -9px;
   left: -13px;
@@ -1673,7 +1594,8 @@ input[name="fatness"]:disabled:checked~.fatness-value:hover::before {
   width: 293px;
   height: 85px;
   opacity: 1;
-z-index: 1;;
+  z-index: 1;
+  ;
 }
 
 .catalog-item:hover .button-quick-view {
@@ -1739,7 +1661,7 @@ z-index: 1;;
   border-bottom: 1px solid rgba(247, 246, 243, 0.5);
   position: relative;
 
-  
+
 }
 
 .pagination-list a {
@@ -1868,6 +1790,7 @@ z-index: 1;;
 
 .social-button:before {
   content: "";
+
   position: absolute;
   top: -18px;
   left: -3px;
@@ -1981,7 +1904,34 @@ z-index: 1;;
 /* МОДАЛЬНЫЕ ОКНА */
 
 
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
+  position: fixed;
+
+  display: none;
+
   color: #323232;
 
   font-size: 13px;
@@ -1997,8 +1947,15 @@ z-index: 1;;
 
 }
 
+.modal-show {
+  display: block;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-search-form {
-  display: none;
 
   box-sizing: border-box;
   position: absolute;
@@ -2039,7 +1996,6 @@ z-index: 1;;
 }
 
 .modal-login {
-  display: none;
   box-sizing: border-box;
 
   position: absolute;
