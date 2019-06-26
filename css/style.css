@@ -18,7 +18,7 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-
+  box-sizing: border-box;
 padding: 0px 25px;
 position: relative;
 }
@@ -325,9 +325,12 @@ position: relative;
 .current a {
   text-decoration: none;
 }
-
-.sub-site-navigation-list {
+.sub-site-navigation{
   display: none;
+
+}
+.sub-site-navigation-list {
+ 
   list-style: none;
   padding: 0;
   margin: 0;
@@ -412,6 +415,7 @@ position: relative;
 }
 
 .user-navigation {
+
   display: flex;
   align-items: center;
 
@@ -439,7 +443,7 @@ position: relative;
 }
 
 .user-navigation li:not(:first-child) {
-  margin-left: 11px;
+  margin-left: 12px;
 }
 
 
@@ -475,7 +479,7 @@ position: relative;
 a.login-link {
   text-decoration: none;
 
-  padding: 6.5px 17px 8px 44px;
+  padding: 7px 17px 7px 44px;
   border-radius: 25px;
   align-items: center;
   vertical-align: middle;
@@ -533,32 +537,29 @@ a.busket-link {
 
 
 .user-navigation .full-busket-link {
-
-  padding-left: 40px;
-  margin: 0;
-
   text-decoration: none;
   border-radius: 50px;
 }
 
 a.full-busket-link {
+  width: 117px;
   text-decoration: none;
   color: #323232;
   background-color: #f8f7f4;
-  width: 117px;
   text-decoration: none;
-  padding: 6.5px 17px 7px 45px;
+  padding: 7px 17px 8px 45px;
   border-radius: 25px;
   position: relative;
   align-items: center;
+  vertical-align: center;
 }
 
 .full-busket-link::before {
   content: "";
 
   position: absolute;
-  top: 6px;
-  left: 12px;
+  top: 7px;
+  left: 17px;
   margin-right: 8px;
   vertical-align: middle;
 
@@ -1057,6 +1058,7 @@ a.full-busket-link {
 .subscription input:hover,
 .subscription input:focus {
   border: 2px solid rgba(154, 154, 154, 0.52);
+  padding: 9.5px 9px 9.5px 9px;
 }
 
 .button-subscription {
@@ -1446,7 +1448,7 @@ input[type="radio"].visually-hidden {
   width: 16px;
   height: 16px;
 
-  border: 3px solid #fff;
+  border: 3.5px solid #fff;
   opacity: 0.8;
   border-radius: 50%;
 }
@@ -1460,8 +1462,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 6.5px;
-  left: 7.5px;
+  top: 7px;
+  left: 8px;
 
   width: 9px;
   height: 9px;
@@ -1927,81 +1929,27 @@ input[type="radio"].visually-hidden {
   z-index: 2;
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-
-  90% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
   70% {
-    -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
 
   90% {
-    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes shake {
-
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
   }
 }
 
 @keyframes shake {
-
   0%,
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
@@ -2010,7 +1958,6 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
@@ -2018,13 +1965,13 @@ input[type="radio"].visually-hidden {
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 }
 
 .modal-show {
   display: block;
+  
   animation: bounce 0.6s;
 }
 
@@ -2069,6 +2016,7 @@ input[type="radio"].visually-hidden {
 .search-form input[type="text"]:hover,
 .search-form input[type="text"]:focus {
   border: 2px solid rgba(154, 154, 154, 0.52);
+  padding: 9px 14px;
 }
 
 .search-form input::-webkit-input-placeholder {
@@ -2120,6 +2068,8 @@ input[type="radio"].visually-hidden {
 .login-form input:focus {
   box-sizing: border-box;
   border: 2px solid rgba(154, 154, 154, 0.52);
+  padding: 9px 14px;
+  padding-right: 39px;
 }
 
 .login-form input::-webkit-input-placeholder {
@@ -2247,13 +2197,23 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-form input[type="text"]:hover,
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:hover,
 .feedback-form input[type="email"]:focus,
 .feedback-form textarea:hover,
 .feedback-form textarea:focus {
   border: 2px solid rgba(154, 154, 154, 0.52);
+  padding-left: 11px;
+  padding-top: 12px;
+  padding-bottom: 8px;
 }
+.feedback-form textarea:hover,
+.feedback-form textarea:focus {
+  padding-left: 11px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
-
+}
 .feedback-form .button {
   width: 35%;
   position: absolute;
@@ -2262,7 +2222,7 @@ input[type="radio"].visually-hidden {
 }
 
 .overlay {
-  display: none;
+ display: none;
 
   position: fixed;
 
@@ -2272,7 +2232,7 @@ input[type="radio"].visually-hidden {
   left: 0;
 
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  z-index:1;
 }
 
 .modal-busket {
