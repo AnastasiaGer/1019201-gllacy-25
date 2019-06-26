@@ -1,5 +1,5 @@
 body {
- 
+
 
   box-sizing: border-box;
 
@@ -14,13 +14,13 @@ body {
 
 }
 
-.main-wrapper{
+.main-wrapper {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-padding: 0px 25px;
-position: relative;
+  padding: 0px 25px;
+  position: relative;
 }
 
 .inner-page {
@@ -325,12 +325,14 @@ position: relative;
 .current a {
   text-decoration: none;
 }
-.sub-site-navigation{
+
+.sub-site-navigation {
   display: none;
 
 }
+
 .sub-site-navigation-list {
- 
+
   list-style: none;
   padding: 0;
   margin: 0;
@@ -428,7 +430,7 @@ position: relative;
 .user-navigation .login-link,
 .user-navigation .busket-link {
   box-sizing: border-box;
-display: block;
+  display: block;
   background-color: rgba(247, 246, 243, 0.2);
 
   color: #ffffff;
@@ -462,7 +464,6 @@ display: block;
 
 .button-search:hover,
 .button-search:focus {
-
   opacity: 1;
 }
 
@@ -477,8 +478,7 @@ display: block;
 }
 
 a.login-link {
- 
-   padding: 8px 16px 7px 44px;
+  padding: 8px 16px 7px 44px;
   border-radius: 25px;
   position: relative;
 }
@@ -506,7 +506,7 @@ a.busket-link {
   padding: 8px 16px 7px 44px;
   border-radius: 25px;
   position: relative;
- 
+
 }
 
 .busket-link svg {
@@ -539,8 +539,7 @@ a.busket-link {
 }
 
 a.full-busket-link {
-
- margin:8px;
+  margin: 8px;
   padding: 6px 16px 6px 40px;
   color: #323232;
   background-color: #f8f7f4;
@@ -552,7 +551,7 @@ a.full-busket-link {
 
   position: absolute;
   top: 7px;
-  left:15px;
+  left: 15px;
   margin-right: 8px;
   vertical-align: middle;
 
@@ -1082,12 +1081,14 @@ a.full-busket-link {
   transform: translateX(-50%);
 
 }
+
 .map-image-wrap {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -2;
 }
+
 .map::before {
   content: "";
 
@@ -1105,6 +1106,7 @@ a.full-busket-link {
 
   z-index: 1;
 }
+
 .map iframe {
   width: 1200px;
   height: 430px;
@@ -1434,7 +1436,7 @@ input[type="radio"].visually-hidden {
   top: 0px;
   border: 0;
   padding: 0;
-  margin:0;
+  margin: 0;
   width: 16px;
   height: 16px;
 
@@ -1938,6 +1940,7 @@ input[type="radio"].visually-hidden {
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
@@ -1961,7 +1964,7 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
   display: block;
-  
+
   animation: bounce 0.6s;
 }
 
@@ -2197,6 +2200,7 @@ input[type="radio"].visually-hidden {
   padding-top: 12px;
   padding-bottom: 8px;
 }
+
 .feedback-form textarea:hover,
 .feedback-form textarea:focus {
   padding-left: 11px;
@@ -2204,6 +2208,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 9px;
 
 }
+
 .feedback-form .button {
   width: 35%;
   position: absolute;
@@ -2212,7 +2217,7 @@ input[type="radio"].visually-hidden {
 }
 
 .overlay {
- display: none;
+  display: none;
 
   position: fixed;
 
@@ -2222,7 +2227,7 @@ input[type="radio"].visually-hidden {
   left: 0;
 
   background-color: rgba(0, 0, 0, 0.3);
-  z-index:1;
+  z-index: 1;
 }
 
 .modal-busket {
