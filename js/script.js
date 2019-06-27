@@ -10,6 +10,8 @@ var password = popup.querySelector("[name=password]");
 var isStorageSupport = true;
 var storage = "";
 
+
+
 try {
   storage = localStorage.getItem("login");
 } catch (err) {
@@ -56,3 +58,4 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+

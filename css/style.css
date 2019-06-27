@@ -1,6 +1,4 @@
 body {
-
-
   box-sizing: border-box;
 
   font-family: "Roboto", Arial, sans-serif;
@@ -11,7 +9,6 @@ body {
 
   background-color: #849d8f;
   position: relative;
-
 }
 
 .main-wrapper {
@@ -84,7 +81,6 @@ body {
 }
 
 .site-wrapper {
-
   box-sizing: border-box;
 
   background-image: url("../img/index/slider-item1.png");
@@ -116,8 +112,6 @@ body {
   padding-bottom: 40px;
   text-align: center;
   color: #ffffff;
-
-
 }
 
 .slider-list {
@@ -226,10 +220,8 @@ body {
 }
 
 #product-1:checked~.site-wrapper label:hover {
-
   background: rgba(255, 255, 255, 0.2);
   border: 2px solid #FFFFFF;
-
 }
 
 /*ХЕДЕР*/
@@ -262,11 +254,13 @@ body {
   margin-left: 13px;
 }
 
-.site-navigation:first-child {
+.sub-site-navigation-list>li {
   position: relative;
+
 }
 
 .site-navigation .sub-site-navigation {
+  display: none;
   position: absolute;
   top: 65px;
   left: 155px;
@@ -275,9 +269,14 @@ body {
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
-  z-index: 2;
+  z-index: 10;
 }
 
+/*
+.site-navigation > li:hover .sub-site-navigation{
+  display: block;
+}
+*/
 .site-navigation a {
   display: block;
   padding: 9px 13px;
@@ -319,20 +318,13 @@ body {
   background-color: #d07058;
   color: #ffffff;
   border-radius: 55px;
-
 }
 
 .current a {
   text-decoration: none;
 }
 
-.sub-site-navigation {
-  display: none;
-
-}
-
 .sub-site-navigation-list {
-
   list-style: none;
   padding: 0;
   margin: 0;
@@ -370,10 +362,6 @@ body {
   left: 10px;
 }
 
-.sub-site-navigation-list li:first-child {
-  position: relative;
-
-}
 
 .sub-site-navigation-list li:hover,
 .sub-site-navigation-list li:focus {
@@ -417,7 +405,6 @@ body {
 }
 
 .user-navigation {
-
   display: flex;
   align-items: center;
 
@@ -448,6 +435,9 @@ body {
   margin-left: 10px;
 }
 
+.search a {
+  box-sizing: border-box;
+}
 
 .button-search {
   font: 0;
@@ -458,7 +448,6 @@ body {
   display: inline-block;
   border: none;
   border-radius: 50%;
-
 }
 
 
@@ -515,7 +504,6 @@ a.busket-link {
   left: 15px;
   margin-right: 8px;
   vertical-align: middle;
-
 }
 
 
@@ -578,7 +566,6 @@ a.full-busket-link {
   height: 64px;
   margin: 0;
   padding: 0;
-
 }
 
 .main-header-contacts {
@@ -586,7 +573,6 @@ a.full-busket-link {
   top: 75px;
   right: 25px;
   text-align: right;
-
 }
 
 .worktime {
@@ -637,7 +623,6 @@ a.full-busket-link {
 }
 
 .specials-2 {
-
   background-color: rgba(50, 28, 20, 0.5);
   background-image: url("../img/index/bg-chocolate.jpg");
   background-position: center;
@@ -766,8 +751,6 @@ a.full-busket-link {
   padding-left: 5px;
   padding-right: 5px;
   text-align: center;
-
-
 }
 
 .catalog-hits-item-image img {
@@ -787,7 +770,6 @@ a.full-busket-link {
   position: absolute;
   left: 0px;
   top: 165px;
-
 }
 
 .catalog-hits-item-price span {
@@ -830,7 +812,6 @@ a.full-busket-link {
 
 
   margin-bottom: 35px;
-
 }
 
 .features-list {
@@ -841,7 +822,6 @@ a.full-busket-link {
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 
 .features h3 {
@@ -862,7 +842,6 @@ a.full-busket-link {
 
   padding-left: 55px;
   margin-bottom: 25px;
-
 }
 
 .features .feature-item1 {
@@ -948,7 +927,6 @@ a.full-busket-link {
 .index-columns {
   display: flex;
   margin-bottom: 35px;
-
 }
 
 .news {
@@ -966,7 +944,6 @@ a.full-busket-link {
   flex-grow: 1;
   padding: 25px 20px;
   margin-right: 25px;
-
 }
 
 .news h3 {
@@ -979,7 +956,6 @@ a.full-busket-link {
 }
 
 .news a {
-
   text-transform: none;
   text-decoration: underline;
   display: inline-block;
@@ -1020,7 +996,6 @@ a.full-busket-link {
   line-height: 22px;
   margin: 0;
   margin-bottom: 35px;
-
 }
 
 .subscription input {
@@ -1069,7 +1044,6 @@ a.full-busket-link {
 
 .map {
   margin-left: -25px;
-
 }
 
 
@@ -1079,7 +1053,6 @@ a.full-busket-link {
   position: relative;
 
   transform: translateX(-50%);
-
 }
 
 .map-image-wrap {
@@ -1188,7 +1161,6 @@ a.full-busket-link {
   line-height: 41px;
   margin-top: 4px;
   margin-bottom: 25px;
-
 }
 
 .breadcrumbs {
@@ -1202,7 +1174,6 @@ a.full-busket-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-
 }
 
 .breadcrumbs li:not(:last-child) {
@@ -1236,7 +1207,6 @@ a.full-busket-link {
   bottom: 0;
   right: -15px;
   color: #FFFFFF;
-
 }
 
 /*ФИЛЬТР*/
@@ -1256,7 +1226,6 @@ a.full-busket-link {
   color: #ffffff;
   padding: 0;
   margin: 0;
-
 }
 
 .filter fieldset {
@@ -1333,7 +1302,6 @@ select::-ms-expand {
 
 .filter-price {
   width: 220px;
-
 }
 
 .range {
@@ -1346,7 +1314,6 @@ select::-ms-expand {
   height: 4px;
   background-color: #d1d9d3;
   border-radius: 3px;
-
 }
 
 .range-runner {
@@ -1589,7 +1556,6 @@ input[type="radio"].visually-hidden {
   background-color: rgba(247, 246, 243, 0.3);
   border-radius: 5px 5px 0px 0px;
   opacity: 1;
-
 }
 
 .button-wrap {
@@ -1610,7 +1576,6 @@ input[type="radio"].visually-hidden {
   height: 85px;
   opacity: 1;
   z-index: 1;
-  ;
 }
 
 .catalog-item:hover .button-quick-view {
@@ -1618,7 +1583,6 @@ input[type="radio"].visually-hidden {
   opacity: 1;
   align-self: center;
   margin: 10px 0 15px 0;
-
 }
 
 .catalog-item-name {
@@ -1652,7 +1616,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 0px;
   top: 165px;
-
 }
 
 .catalog-item-price span {
@@ -1673,8 +1636,6 @@ input[type="radio"].visually-hidden {
   margin: 45px -7px 18px 0;
   border-bottom: 1px solid rgba(247, 246, 243, 0.5);
   position: relative;
-
-
 }
 
 .pagination-list a {
@@ -1760,7 +1721,6 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   color: #ffffff;
-
 }
 
 .main-footer .container {
@@ -1771,7 +1731,6 @@ input[type="radio"].visually-hidden {
 .footer-social {
   box-sizing: border-box;
   width: 185px;
-
 }
 
 .footer-social ul {
@@ -1783,7 +1742,6 @@ input[type="radio"].visually-hidden {
   padding-top: 23px;
   list-style: none;
   text-align: center;
-
 }
 
 .social-button svg {
@@ -1869,7 +1827,6 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   font-weight: 400;
   text-decoration-color: rgba(250, 248, 248, 0.2);
-
 }
 
 .footer-copyright {
@@ -2171,7 +2128,6 @@ input[type="radio"].visually-hidden {
   border: 1px solid rgba(178, 178, 178, 0.52);
   background-color: #ffffff;
   border-radius: 5px;
-
 }
 
 .feedback-form textarea {
@@ -2186,7 +2142,6 @@ input[type="radio"].visually-hidden {
   border: 1px solid rgba(178, 178, 178, 0.52);
   background-color: #ffffff;
   border-radius: 5px;
-
 }
 
 .feedback-form input[type="text"]:hover,
@@ -2247,7 +2202,6 @@ input[type="radio"].visually-hidden {
   padding-left: 17px;
 
   border: 1px solid #d3d3d2;
-
 }
 
 .full-busket:hover .modal-busket {
@@ -2256,7 +2210,6 @@ input[type="radio"].visually-hidden {
 
 
 .item-1 .button-delete-item {
-
   position: absolute;
   background-color: #f8f7f4;
   width: 11px;
@@ -2269,7 +2222,6 @@ input[type="radio"].visually-hidden {
 }
 
 .item-2 .button-delete-item {
-
   position: absolute;
   background-color: #f8f7f4;
   width: 11px;
