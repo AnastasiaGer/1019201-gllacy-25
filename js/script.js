@@ -1,11 +1,10 @@
-var link = document.querySelector(".login-link");
+var loginLink = document.querySelector(".login-link");
 
-var popup = document.querySelector(".modal-login");
-var close = popup.querySelector(".modal-close");
+var loginPopup = document.querySelector(".modal-login");
 
-var form = popup.querySelector("form");
-var login = popup.querySelector("[name=login]");
-var password = popup.querySelector("[name=password]");
+var loginForm = popup.querySelector("form");
+var loginLogin = popup.querySelector("[name=login]");
+var loginPassword = popup.querySelector("[name=password]");
 
 var isStorageSupport = true;
 var storage = "";
@@ -18,33 +17,27 @@ try {
   isStorageSupport = false;
 }
 
-link.addEventListener("click", function (evt) {
+loginLink.addEventListener("mouseover", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-show");
+  loginPopup.classList.add("modal-show");
 
   if (storage) {
-    login.value = storage;
-    password.focus();
+    loginLogin.value = storage;
+    loginPassword.focus();
   } else {
-    login.focus();
+    loginLogin.focus();
   }
 });
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-  popup.classList.remove("modal-error");
-});
-
-form.addEventListener("submit", function (evt) {
-  if (!login.value || !password.value) {
+loginForm.addEventListener("submit", function (evt) {
+  if (!loginLogin.value || !loginPassword.value) {
     evt.preventDefault();
-    popup.classList.remove("modal-error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal-error");
+    loginPopup.classList.remove("modal-error");
+    loginPopup.offsetWidth = loginPopup.offsetWidth;
+    loginPopup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("login", login.value);
+      localStorage.setItem("login", loginLogin.value);
     }
   }
 });
@@ -52,9 +45,9 @@ form.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
+    if (loginPopup.classList.contains("modal-show")) {
+      loginPopup.classList.remove("modal-show");
+      loginPopup.classList.remove("modal-error");
     }
   }
 });
