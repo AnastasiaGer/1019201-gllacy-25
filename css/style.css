@@ -788,6 +788,8 @@ a.full-busket-link
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
+
+    text-decoration: none;
 }
 
 
@@ -837,6 +839,8 @@ a.full-busket-link
 
 .specials-1
 {
+    position: relative;
+
     background: rgba(165, 21, 54, .5);
     background-image: url('../img/index/bg-raspberry.jpg');
     background-repeat: repeat;
@@ -851,6 +855,8 @@ a.full-busket-link
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
+
+    osition: relative;
 }
 .specials .specials-wrapper:nth-child(2n)
 {
@@ -875,20 +881,25 @@ a.full-busket-link
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-top: 13px;
-    margin-bottom: 46px;
+    margin-top: 17px;
+    margin-bottom: 88px;
+    margin-left: 2px;
 }
 
-.button-specials-wrapper
+.button-specials-wrapper-1
 {
-    text-align: end;
+    position: absolute;
+    bottom: 22px;
+    left: 378px;
 }
-
-
-.catalog-hits
+.button-specials-wrapper-2
 {
-    margin-bottom: 40px;
+    position: absolute;
+    top: 161px;
+    right: 21px;
 }
+
+
 
 .catalog-hits-list
 {
@@ -916,9 +927,18 @@ a.full-busket-link
     width: 267px;
     margin-right: 26px;
 }
-
+.catalog-hits-item h3
+{
+    margin: 7px 0 10px 0;
+}
 .catalog-hits-item a
 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+
+    color: #fff;
+
     -webkit-text-decoration-color: rgba(250, 248, 248, .2);
             text-decoration-color: rgba(250, 248, 248, .2);
 }
@@ -931,12 +951,11 @@ a.full-busket-link
 .catalog-hits-item:hover::before
 {
     position: absolute;
-    top: -9px;
+    top: -6px;
     left: -13px;
 
     width: 293px;
     height: 100%;
-    padding-bottom: 9px;
 
     content: '';
 
@@ -948,7 +967,7 @@ a.full-busket-link
 .wrapper
 {
     position: absolute;
-    bottom: -85px;
+    bottom: -69px;
     left: -13px;
 
     -webkit-box-sizing: border-box;
@@ -967,7 +986,7 @@ a.full-busket-link
 .catalog-hits-item:hover .wrapper
 {
     width: 293px;
-    height: 85px;
+    height: 75px;
 
     opacity: 1;
 }
@@ -998,13 +1017,13 @@ a.full-busket-link
     align-self: center;
 }
 
-.catalog-hits-name
+.catalog-hits-item .catalog-hits-name
 {
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
 
-    display: block;
+    display: inline-block;
 
     margin: 0;
     padding-right: 5px;
@@ -1020,8 +1039,6 @@ a.full-busket-link
 {
     position: relative;
 
-    margin-bottom: 10px;
-
     border-radius: 50%;
 }
 
@@ -1032,8 +1049,10 @@ a.full-busket-link
     line-height: 45px;
 
     position: absolute;
-    top: 165px;
+    top: 208px;
     left: 0;
+
+    margin: 0;
 
     color: #fff;
     text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
@@ -1070,7 +1089,8 @@ a.full-busket-link
 
 .features
 {
-    margin-bottom: 41px;
+    margin-top: 31px;
+    margin-bottom: 40px;
     padding-top: 22px;
     padding-right: 20px;
     padding-bottom: 2px;
@@ -1121,11 +1141,13 @@ a.full-busket-link
 
     width: 488px;
     margin-bottom: 25px;
-    padding-left: 58px;
-
-    text-align: left;
+    padding-left: 60px;
 }
-
+.features-list li:nth-child(2n+2)
+{
+    width: 480px;
+    padding-left: 5px;
+}
 .features .feature-item1
 {
     position: relative;
@@ -1157,7 +1179,7 @@ a.full-busket-link
 {
     position: absolute;
     top: -14px;
-    left: 5px;
+    left: -55px;
 
     width: 49px;
     height: 49px;
@@ -1201,7 +1223,7 @@ a.full-busket-link
 {
     position: absolute;
     top: -14px;
-    left: 5px;
+    left: -55px;
 
     width: 49px;
     height: 49px;
@@ -1233,7 +1255,7 @@ a.full-busket-link
             box-sizing: border-box;
     width: 50%;
     margin-right: 25px;
-    padding: 25px 20px;
+    padding: 23px 20px;
 
     list-style: none;
 
@@ -1269,7 +1291,7 @@ a.full-busket-link
     display: inline-block;
 
     width: 285px;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
 
     vertical-align: center;
     text-decoration: underline;
@@ -1292,7 +1314,7 @@ a.full-busket-link
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 50%;
-    padding: 29px 21px;
+    padding: 30px 21px;
 
     color: #5a5a5a;
     border: 6px solid #f8f7f4;
@@ -1323,6 +1345,7 @@ a.full-busket-link
     width: 365px;
     margin-bottom: 5px;
     padding: 10px;
+    padding-left: 15px;
 
     color: #000;
     border: 1px solid rgba(178, 178, 178, .52);
@@ -1343,6 +1366,7 @@ a.full-busket-link
 .subscription input:focus
 {
     padding: 9px;
+    padding-left: 15px;
 
     border: 2px solid rgba(154, 154, 154, .52);
 }
@@ -1356,6 +1380,8 @@ a.full-busket-link
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 129px;
+    height: 44px;
+    padding: 11px 25px 10px 16px;
 }
 
 .login-icon-user
@@ -1435,7 +1461,7 @@ a.full-busket-link
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 300px;
+    width: 302px;
     height: 305px;
     padding: 29px 26px;
 
@@ -1592,7 +1618,7 @@ a.full-busket-link
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-bottom: 13px;
+    margin-bottom: 27px;
     padding-left: 4px;
 
     -ms-flex-wrap: wrap;
@@ -1614,11 +1640,15 @@ a.full-busket-link
     background-color: rgba(255, 255, 255, .2);
 
     -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
 }
 
 .filter
 {
     font-size: 0;
+
+    position: relative;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1626,7 +1656,6 @@ a.full-busket-link
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin: 0 14px 14px 0;
     padding: 0;
 
     color: #fff;
@@ -1804,9 +1833,9 @@ select.sort-selection::-ms-expand
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
-.fatness
+.fatness ul
 {
-    width: 415px;
+    width: 421px;
 }
 .fatness-label input[name='fatness']
 {
@@ -1909,7 +1938,6 @@ input[type='radio'].visually-hidden
 
 .filler legend
 {
-    margin-top: 17px;
     margin-left: 12px;
 }
 .filler ul
@@ -1992,7 +2020,7 @@ input[type='radio'].visually-hidden
 
     width: 144px;
     height: 35px;
-    margin-top: 22px;
+    margin-top: 23px;
 
     color: #fff;
     border: 2px solid #fff;
@@ -2044,11 +2072,20 @@ input[type='radio'].visually-hidden
     width: 267px;
     margin: 0;
     margin-right: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
-
+.catalog-item h3
+{
+    margin: 7px 0 10px 0;
+}
 .catalog-item a
 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+
+    color: #fff;
+
     -webkit-text-decoration-color: rgba(250, 248, 248, .2);
             text-decoration-color: rgba(250, 248, 248, .2);
 }
@@ -2061,12 +2098,11 @@ input[type='radio'].visually-hidden
 .catalog-item:hover::before
 {
     position: absolute;
-    top: -9px;
+    top: -6px;
     left: -13px;
 
     width: 293px;
     height: 100%;
-    padding-bottom: 9px;
 
     content: '';
 
@@ -2078,7 +2114,7 @@ input[type='radio'].visually-hidden
 .button-wrap
 {
     position: absolute;
-    bottom: -85px;
+    bottom: -69px;
     left: -13px;
 
     -webkit-box-sizing: border-box;
@@ -2098,7 +2134,7 @@ input[type='radio'].visually-hidden
     z-index: 1;
 
     width: 293px;
-    height: 85px;
+    height: 75px;
 
     opacity: 1;
 }
@@ -2137,8 +2173,6 @@ input[type='radio'].visually-hidden
 .catalog-item-image img
 {
     position: relative;
-
-    margin-bottom: 10px;
 
     border-radius: 50%;
 }
@@ -2306,6 +2340,9 @@ input[type='radio'].visually-hidden
     margin: 0;
     margin-bottom: 5px;
 
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -2374,81 +2411,81 @@ input[type='radio'].visually-hidden
 
 .footer-info
 {
-    position: relative;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
-    margin: 0;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 5px;
+    width: 340px;
+    max-height: 45px;
+    margin: 18px 0 0 0;
+    padding: 0;
 
+    list-style: none;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: 29%;
-    flex-basis: 29%;
 }
+.footer-info .footer-info-item
+{
+    display: inline-block;
 
-.info-provider:hover
+    margin-right: 12px;
+    padding-bottom: 3px;
+    padding-left: 17px;
+}
+.footer-info a
+{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-bottom: 1px solid rgba(247, 246, 243, .5);
+}
+.footer-info-item:last-child a
+{
+    margin-left: 12px;
+}
+.footer-info-item a:hover,
+.footer-info-item a:focus,
+.footer-info-item a:active
 {
     color: #ffbc9e;
+    border-bottom: 1px solid rgba(255, 188, 158, .5);
 }
 
-.info-provider:active
+.footer-info-item:first-child a
 {
-    color: #ffbc9e;
+    font-weight: 700;
 }
-
-.footer-info a:first-child
+.footer-info-item:first-child
 {
-    font-weight: bold;
-
-    padding-left: 20px;
+    position: relative;
 }
-
-.footer-info a:nth-child(3)
-{
-    padding-left: 20px;
-}
-
-.footer-info a:first-child::before
+.footer-info-item:first-child::before
 {
     position: absolute;
-    z-index: 1;
-    top: 4px;
-    left: 5px;
+    top: -3px;
+    left: 15px;
 
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 13px;
+    margin-top: 7px;
+    margin-left: -20px;
 
     content: '';
 
     opacity: 1;
     background-image: url('../img/heart.svg');
     background-repeat: no-repeat;
-    background-position: 0 0;
 }
 
-.footer-info a
-{
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
 
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-
-    color: #fff;
-
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    -webkit-text-decoration-color: rgba(250, 248, 248, .2);
-            text-decoration-color: rgba(250, 248, 248, .2);
-}
 
 .footer-copyright
 {
@@ -2462,7 +2499,10 @@ input[type='radio'].visually-hidden
 
 .footer-copyright-info
 {
+    text-decoration: none;
+
     color: #fff;
+    border-bottom: 1px solid rgba(247, 246, 243, .5);
 }
 
 .footer-copyright b
