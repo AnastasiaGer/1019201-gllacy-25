@@ -1412,9 +1412,9 @@ a.full-busket-link
 .map-image-wrap
 {
     position: absolute;
-    z-index: -2;
-    top: 0;
-    left: 0;
+
+    bottom: 75px;
+    left: 600px;
 }
 
 .map::before
