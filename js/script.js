@@ -1,10 +1,10 @@
-var link = document.querySelector(".feedback-link");
+    var link = document.querySelector(".feedback-link");
     var popup = document.querySelector(".modal-feedback");
     var close = document.querySelector(".modal-close");
     var closeOverlay = document.querySelector(".modal-overlay");
     var overlay = document.querySelector(".modal-overlay");
 
-    var loginLink = document.querySelector(".login-link");
+    var loginLInk = document.querySelector(".login-re");
     var login = document.getElementById("email");
     var password = document.getElementById("password");
     var loginForm = document.querySelector(".login-form");
@@ -31,7 +31,7 @@ var link = document.querySelector(".feedback-link");
         closeOverlay.classList.remove("modal-overlay-show");
         popup.classList.remove("modal-content-show");
     });
-    loginLink.addEventListener("click",function(event) {
+    loginLInk.addEventListener("click",function(event) {
         event.preventDefault();
         if (storage) {
           login.value = storage;
