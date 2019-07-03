@@ -1,54 +1,52 @@
-var loginLink = document.querySelector(".login-link");
+var link = document.querySelector(".feedback-link");
+    var popup = document.querySelector(".modal-feedback");
+    var close = document.querySelector(".modal-close");
+    var closeOverlay = document.querySelector(".modal-overlay");
+    var overlay = document.querySelector(".modal-overlay");
 
-var loginPopup = document.querySelector(".modal-login");
-
-var loginForm = popup.querySelector("form");
-var loginLogin = popup.querySelector("[name=login]");
-var loginPassword = popup.querySelector("[name=password]");
-
-var isStorageSupport = true;
-var storage = "";
+    var loginLink = document.querySelector(".login-link");
+    var login = document.getElementById("email");
+    var password = document.getElementById("password");
+    var loginForm = document.querySelector(".login-form");
+    var storage = localStorage.getItem("login");
 
 
-
-try {
-  storage = localStorage.getItem("login");
-} catch (err) {
-  isStorageSupport = false;
-}
-
-loginLink.addEventListener("mouseover", function (evt) {
-  evt.preventDefault();
-  loginPopup.classList.add("modal-show");
-
-  if (storage) {
-    loginLogin.value = storage;
-    loginPassword.focus();
-  } else {
-    loginLogin.focus();
-  }
-});
-
-loginForm.addEventListener("submit", function (evt) {
-  if (!loginLogin.value || !loginPassword.value) {
-    evt.preventDefault();
-    loginPopup.classList.remove("modal-error");
-    loginPopup.offsetWidth = loginPopup.offsetWidth;
-    loginPopup.classList.add("modal-error");
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem("login", loginLogin.value);
-    }
-  }
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (loginPopup.classList.contains("modal-show")) {
-      loginPopup.classList.remove("modal-show");
-      loginPopup.classList.remove("modal-error");
-    }
-  }
-});
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        popup.classList.add("show-animation");
+        overlay.classList.add("modal-overlay-show");
+    });
+    close.addEventListener('click', function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        closeOverlay.classList.remove("modal-overlay-show");
+    });
+    overlay.addEventListener("click", function(event) {
+        event.preventDefault();
+        overlay.classList.remove("modal-content-show");
+    });
+    closeOverlay.addEventListener("click", function(event) {
+        event.preventDefault();
+        closeOverlay.classList.remove("modal-overlay-show");
+        popup.classList.remove("modal-content-show");
+    });
+    loginLink.addEventListener("click",function(event) {
+        event.preventDefault();
+        if (storage) {
+          login.value = storage;
+          login.focus();
+        }
+        else {
+            login.focus();
+        }
+    });
+    loginForm.addEventListener("submit", function(event) {
+        if (!login.value || !password.value) {
+            event.preventDefault();
+        }
+        else {
+            localStorage.setItem("login", login.value);
+        }
+    });
 
