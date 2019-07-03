@@ -5,7 +5,7 @@
       <title>Магазин мороженого "Глейси"</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+      <link href="css/style.min.css" rel="stylesheet">
    </head>
    <body class="inner-page">
       <header class="main-header">
@@ -41,44 +41,43 @@
                </ul>
             </div>
             <ul class="user-navigation">
-                  <li class="search">
-                        <a class="main button-search search-link" href="search.html">
-                           <span class="visually-hidden">Поиск</span>
-                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-                              <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
-                           </svg>
-                        </a>
-                        <section class="modal-search">
-                           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                              <label class="top-placeholder visually-hidden" for="search-form-input">Что ищем?</label>
-                              <input class="search-form" id="search-form-input" type="text" name="search" value="" placeholder="Что ищем?">
-                           </form>
-                        </section>
-                     </li>
-
-                     <li class="login">
-                        <a class="main login-link " href="login.html">
-                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-                              <g fill="#FFF">
-                                 <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
-                                 <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
-                              </g>
-                           </svg>
-                           <span>Вход</span>
-                        </a>
-                        <section class="modal-login">
-                           <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
-                           <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                              <input type="email" name="login" placeholder="Электронная почта" aria-label="Электронная почта" required>
-                              <input type="password" name="password" placeholder="Пароль" aria-label="Пароль" required>
-                              <div class="login-help">
-                                 <a class="login-re restore" href="#">Забыли пароль?</a>
-                                 <a class="login-re registration" href="#">Новая регистрация</a>
-                              </div>
-                              <button class="button" type="submit">Войти</button>
-                           </form>
-                        </section>
-                     </li>
+               <li class="search">
+                  <a class="main button-search search-link" href="search.html">
+                     <span class="visually-hidden">Поиск</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                        <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
+                     </svg>
+                  </a>
+                  <section class="modal-search">
+                     <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                        <label class="top-placeholder visually-hidden" for="search-form-input">Что ищем?</label>
+                        <input class="search-form" id="search-form-input" type="text" name="search" value="" placeholder="Что ищем?">
+                     </form>
+                  </section>
+               </li>
+               <li class="login">
+                  <a class="main login-link " href="login.html">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+                        <g fill="#FFF">
+                           <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+                           <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
+                        </g>
+                     </svg>
+                     <span>Вход</span>
+                  </a>
+                  <section class="modal-login">
+                     <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
+                     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                        <input type="email" name="login" placeholder="Электронная почта" aria-label="Электронная почта" required>
+                        <input type="password" name="password" placeholder="Пароль" aria-label="Пароль" required>
+                        <div class="login-help">
+                           <a class="login-re restore" href="#">Забыли пароль?</a>
+                           <a class="login-re registration" href="#">Новая регистрация</a>
+                        </div>
+                        <button class="button" type="submit">Войти</button>
+                     </form>
+                  </section>
+               </li>
                <li class="full-busket">
                   <a class="main full-busket-link" href="busket.html">
                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
@@ -461,24 +460,6 @@
             </p>
          </div>
       </footer>
-      <section class="modal modal-search-form">
-         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label class="visually-hidden" for="search-form-input">Что ищем?</label>
-            <input class="search-form" id="search-form-input" type="text" name="search" value="" placeholder="Что ищем?">
-         </form>
-      </section>
-      <section class="modal modal-login">
-         <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
-         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" placeholder="Электронная почта" aria-label="Электронная почта" required>
-            <input type="password" placeholder="Пароль" aria-label="Пароль" required>
-            <div class="login-help">
-               <a class="restore" href="#">Забыли пароль?</a>
-               <a class="registration" href="#">Новая регистрация</a>
-            </div>
-            <button class="button" type="submit">Войти</button>
-         </form>
-      </section>
       <section class="modal modal-busket">
          <h3 class="visually-hidden">Товары в корзине</h3>
          <form class="busket-form" action="http://echo.htmlacademy.ru" method="post">
@@ -534,6 +515,6 @@
          </form>
       </section>
       <div class="modal-overlay"></div>
-      <script src="js/script.js"></script>
+      <script src="js/script.min.js"></script>
    </body>
 </html>
