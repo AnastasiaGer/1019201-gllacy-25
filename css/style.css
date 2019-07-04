@@ -1593,7 +1593,7 @@ a.full-busket-link
     position: relative;
 
     width: 1195px;
-    height: 425px;
+    height: 420px;
 
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -1603,7 +1603,7 @@ a.full-busket-link
 .map-image-wrap
 {
     position: absolute;
-    bottom: 75px;
+    bottom: 77px;
     left: 600px;
 }
 
