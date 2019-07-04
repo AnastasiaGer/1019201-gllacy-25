@@ -1277,8 +1277,8 @@ a.full-busket-link
 
 .features
 {
-    margin-top: 31px;
-    margin-bottom: 40px;
+    margin-top: 32px;
+    margin-bottom: 42px;
     padding-top: 22px;
     padding-right: 20px;
     padding-bottom: 2px;
@@ -1432,7 +1432,7 @@ a.full-busket-link
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -1446,15 +1446,16 @@ a.full-busket-link
     width: 50%;
     margin-right: 25px;
     padding: 23px 20px;
-
+    
     list-style: none;
 
     color: #fff;
     border-radius: 15px;
     background-color: #fff;
     background-image: url('../img/index/bg-strawberry.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
 
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -1521,7 +1522,7 @@ a.full-busket-link
     line-height: 22px;
 
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 }
 
 .subscription input
@@ -1592,7 +1593,7 @@ a.full-busket-link
     position: relative;
 
     width: 1195px;
-    height: 430px;
+    height: 425px;
 
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -1630,7 +1631,7 @@ a.full-busket-link
     z-index: 1;
 
     width: 1200px;
-    height: 430px;
+    height: 425px;
     margin-bottom: 10px;
 
     border: none;
@@ -1700,7 +1701,7 @@ a.full-busket-link
 .contacts p:first-of-type
 {
     width: 150px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .contacts p:last-of-type
@@ -1712,7 +1713,7 @@ a.full-busket-link
 {
     position: absolute;
     right: 25px;
-    bottom: 30px;
+    bottom: 27px;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -2613,7 +2614,7 @@ input[type='radio'].visually-hidden
 
     width: 340px;
     max-height: 45px;
-    margin: 18px 0 0 0;
+    margin: 22px 0 0 0;
     padding: 0;
 
     list-style: none;
@@ -2796,9 +2797,10 @@ input[type='radio'].visually-hidden
 .modal-feedback
 {
     position: fixed;
-    right: 638px;
-    bottom: 137px;
-
+    top: 50%;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: -230px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 478px;
