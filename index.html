@@ -5,7 +5,7 @@
       <title>Магазин мороженого "Глейси"</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+      <link href="css/style.min.css" rel="stylesheet">
    </head>
    <body>
       <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -333,13 +333,13 @@
                      <li  class="footer-info-item"><a href="#">О производстве</a></li>
                      <li  class="footer-info-item"><a href="#">Экологические стандарты</a></li>
                   </ul>
-                  <p class="footer-copyright">
+                  <div class="footer-copyright">
                      <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                      <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
                      </a>
                      <b>Сделано в
                      <a class="footer-copyright-info" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy&nbsp;</a>© 2019</b>
-                  </p>
+                     </div>
                </div>
             </footer>
             <section class="modal modal-feedback">
@@ -347,11 +347,11 @@
                   <h2 class="visually-hidden">Форма обратной связи</h2>
                   <h3>Мы обязательно Вам ответим!</h3>
                   <label class="visually-hidden" for="user-first-name">Как Вас зовут?</label>
-                  <input id="user-first-name" class=" feedback-name colortext" type="text" name="name" placeholder="Как Вас зовут?">
+                  <input id="user-first-name" class=" feedback-name colortext" type="text" aria-label="Имя" name="name" placeholder="Как Вас зовут?">
                   <label class="visually-hidden" for="user-email">Ваша почта для ответа?</label>
-                  <input id="user-email" class="feedback-email colortext" type="email" name="email" placeholder="Ваша почта для ответа?">
+                  <input id="user-email" class="feedback-email colortext" type="text" aria-label="Электронная почта"name="email" placeholder="Ваша почта для ответа?">
                   <label class="visually-hidden" for="user-feedback">Напишите что-нибудь</label>
-                  <textarea id="user-feedback" class="feedback-message colortext" name="feedback" placeholder="Напишите что-нибудь..."></textarea>
+                  <textarea id="user-feedback" class="feedback-message colortext" aria-label="Текст-обращения" name="message" placeholder="Напишите что-нибудь..."></textarea>
                   <button class="button feedback-button" type="submit">
                   Отправить
                   </button>
@@ -367,6 +367,6 @@
             <script src="https://api-maps.yandex.ru/2.1/?apikey=cd34823f-0b8b-4aba-be82-72027d93120e&lang=en_US"></script>
          </div>
       </div>
-      <script src="js/script.js"></script>
+      <script src="js/script.min.js"></script>
    </body>
 </html>

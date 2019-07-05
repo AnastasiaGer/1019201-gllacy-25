@@ -5,41 +5,46 @@
     var closeOverlay = document.querySelector(".modal-overlay");
     var overlay = document.querySelector(".modal-overlay");
 
-    var loginForm = popup.querySelector("form");
-    var login = document.getElementById("email");
-
+    var FeedbackForm = popup.querySelector("form");
+    var elName = popup.querySelector(".feedback-name");
+    var elEmail = popup.querySelector(".feedback-email");
+    var elMessage = popup.querySelector(".feedback-message");
     
     var isStorageSupport = true;
     var storage = "";
 
     try {
-        storage = localStorage.getItem("login");
-      } catch (err) {
+        storage["name"] = localStorage.getItem("name");
+        storage["email"] = localStorage.getItem("email");
+    } catch (err) {
         isStorageSupport = false;
-      }
+    }
 
     link.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.add("modal-content-show");
         popup.classList.add("show-animation");
         overlay.classList.add("modal-overlay-show");
+        emptyFields();
+
         if (storage) {
-            login.value = storage;
-            password.focus();
-          } else {
-            login.focus();
-          }
+            elName.value = storage["name"];
+            elEmail.value = storage["email"];
+            elMessage.focus();
+        } else {
+            elName.focus();
+        }
     });
     close.addEventListener('click', function(event) {
         event.preventDefault();
         popup.classList.remove("modal-content-show");
-        popup.classList.remove("modal-error");
         closeOverlay.classList.remove("modal-overlay-show");
+        popup.classList.remove("modal-error"); 
     });
     overlay.addEventListener("click", function(event) {
         event.preventDefault();
         overlay.classList.remove("modal-content-show");
-        popup.classList.remove("modal-error");
+        popup.classList.remove("modal-error"); 
     });
     closeOverlay.addEventListener("click", function(event) {
         event.preventDefault();
@@ -47,18 +52,36 @@
         popup.classList.remove("modal-content-show");
         popup.classList.remove("modal-error");
     });
-    
-    loginForm.addEventListener("submit", function(event) {
-        if (!login.value || !password.value) {
+    document.addEventListener("keydown", function (evt) {
+        if (evt.key === "Escape") {
+            if (popup.classList.contains("modal-content-show")) {
+                popup.classList.remove("modal-content-show");
+                popup.classList.remove("modal-error");
+                overlay.classList.remove("modal-overlay-show");
+            }
+        }
+    });
+    FeedbackForm.addEventListener("submit", function(event) {
+        if (!elName.value || !elEmail.value || !elMessage.value) {
             event.preventDefault();
-            popup.classList.add("modal-error");
+            popup.classList.remove("modal-error");
             popup.offsetWidth = popup.offsetWidth;
             popup.classList.add("modal-error");
+            if (!elName)
+            elName.focus();
+        if (!elEmail)
+            elEmail.focus();
+        if (!elMessage)
+            elMessage.focus();
+    } else {
+        if (isStorageSupport) {
+            localStorage.setItem("name", elName.value);
+            localStorage.setItem("email", elEmail.value);
         }
-        else {
-            if (isStorageSupport) {
-              localStorage.setItem("login", login.value);
-            }
-          }
-    });
-
+    }
+});
+let emptyFields = function() {
+    elName.value = "";
+    elEmail.value = "";
+    elMessage.value = "";
+};
