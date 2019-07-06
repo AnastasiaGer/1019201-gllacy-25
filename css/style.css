@@ -328,6 +328,10 @@ input[type='radio'].visually-hidden
     margin-left: 3px;
 }
 
+.inner-page .site-navigation-container{
+    margin-left: 0px;
+}
+
 .site-navigation,
 .user-navigation
 {
@@ -362,6 +366,10 @@ input[type='radio'].visually-hidden
     display: inline-block;
 
     cursor: pointer;
+}
+
+.site-navigation > li:not(:first-child){
+    margin-left:2px;
 }
 
 .site-navigation .sub-site-navigation
@@ -608,7 +616,6 @@ input[type='radio'].visually-hidden
     text-decoration: none;
 }
 
-
 .search a
 {
     -webkit-box-sizing: border-box;
@@ -710,6 +717,42 @@ input[type='radio'].visually-hidden
     color: #999;
 }
 
+.search-form input::-moz-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.search-form input:-ms-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.search-form input::-ms-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.search-form input::placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
 .login:hover .modal-login
 {
     display: block;
@@ -775,6 +818,42 @@ input[type='radio'].visually-hidden
 }
 
 .login-form input::-webkit-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.login-form input::-moz-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.login-form input:-ms-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.login-form input::-ms-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.login-form input::placeholder
 {
     font-size: 14px;
     font-weight: 400;
@@ -1519,6 +1598,42 @@ a.full-busket-link
     color: #999;
 }
 
+.subscription-form input::-moz-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.subscription-form input:-ms-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.subscription-form input::-ms-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.subscription-form input::placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
 .subscription input:hover,
 .subscription input:focus
 {
@@ -1551,21 +1666,21 @@ a.full-busket-link
 
 .map
 {
-    margin-left: -25px;
     width: 1200px;
-    
+    margin-left: -25px;
 }
 
 .map img
 {
-    max-width: 1200px;
     position: relative;
+
+    max-width: 1200px;
 }
 
 .map-image-wrap
 {
     position: absolute;
-    bottom: 75px;
+    bottom: 73px;
     left: 2px;
 }
 
@@ -1593,7 +1708,7 @@ a.full-busket-link
     z-index: 1;
 
     width: 100%;
-    height: 430px;
+    height: 427px;
     margin-bottom: 10px;
 
     border: none;
@@ -1603,8 +1718,8 @@ a.full-busket-link
 {
     position: absolute;
     z-index: 3;
-    right: 27px;
-    bottom: 142px;
+    right: 26px;
+    bottom: 140px;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1648,6 +1763,7 @@ a.full-busket-link
 .contacts a.contacts-phone
 {
     margin: 4px 0;
+
     text-decoration: none;
 }
 
@@ -1714,19 +1830,17 @@ a.full-busket-link
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    
 }
 
 .breadcrumbs li:not(:last-child)
 {
-    margin-right: 20px;
     position: relative;
+
+    margin-right: 20px;
 }
 
 .breadcrumbs a
 {
-   
-
     color: #fff;
 
     -webkit-text-decoration-color: rgba(250, 248, 248, .2);
@@ -1752,7 +1866,7 @@ a.full-busket-link
     border-bottom: none;
 }
 
-.breadcrumbs:not(:last-child) li::after
+.breadcrumbs li:not(:last-child)::before
 {
     position: absolute;
     right: -15px;
@@ -1811,7 +1925,7 @@ a.full-busket-link
 
     display: inline-block;
 
-    margin: 0 13px 12px 0;
+    margin: 0 13px 13px 0;
     padding: 0;
 
     vertical-align: top;
@@ -1829,7 +1943,7 @@ a.full-busket-link
 
     color: #fff;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, .2);
 
     -webkit-appearance: none;
@@ -1843,7 +1957,7 @@ a.full-busket-link
     font-weight: 500;
     line-height: 16px;
 
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     margin-left: 16px;
 
     color: #fff;
@@ -2073,6 +2187,7 @@ select.sort-selection::-ms-expand
 {
     margin-left: 12px;
 }
+
 .filler ul
 {
     width: 703px;
@@ -2086,7 +2201,7 @@ select.sort-selection::-ms-expand
 
     display: block;
 
-    padding: 8px 9px 9px 44px;
+    padding: 9px 9px 9px 45px;
 
     cursor: pointer;
     -webkit-user-select: none;
@@ -2374,13 +2489,14 @@ select.sort-selection::-ms-expand
 
     display: inline-block;
 
-    padding: 5px 10px;
+    padding: 4px 8px;
+    margin: 0 2px 0 2px;
 
     vertical-align: middle;
     text-decoration: none;
 
     color: #fff;
-    border-radius: 15px;
+    border-radius: 50%;
     background-color: transparent;
 }
 
@@ -2521,6 +2637,10 @@ select.sort-selection::-ms-expand
         flex-wrap: wrap;
 }
 
+.inner-page .footer-social ul{
+    margin-left: 0px;
+}
+
 .social-button svg
 {
     width: 32px;
@@ -2561,7 +2681,7 @@ select.sort-selection::-ms-expand
 
     width: 340px;
     max-height: 45px;
-    margin: 20px 0 0 6px;
+    margin: 20px 0px 0 7px;
     padding: 0;
 
     list-style: none;
@@ -2577,7 +2697,7 @@ select.sort-selection::-ms-expand
 {
     display: inline-block;
 
-    margin-right: 12px;
+    margin-right: 15px;
     padding-bottom: 3px;
     padding-left: 17px;
 }
@@ -2637,23 +2757,35 @@ select.sort-selection::-ms-expand
 
 .footer-copyright
 {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-
+    box-sizing: border-box;
     width: 190px;
     height: 59px;
     margin: 0;
-    padding-top: 4px;
+    padding-top: 5px;
 }
+
+.footer-copyright img{
+    padding-left: 4px;
+}
+
+.inner-page .footer-copyright img{
+    padding-left: 0px;
+}
+
 .footer-copyright a
 {
     display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
 }
+
 .footer-copyright-info
 {
     text-decoration: none;
-
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
     color: #fff;
     border-bottom: 1px solid rgba(247, 246, 243, .5);
 }
@@ -2823,7 +2955,7 @@ select.sort-selection::-ms-expand
     width: 478px;
     margin-top: -230px;
     margin-left: -240px;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-right: 26px;
     padding-bottom: 90px;
     padding-left: 24px;
@@ -2852,7 +2984,7 @@ select.sort-selection::-ms-expand
     line-height: 28px;
 
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 
     color: #323232;
 }
@@ -2867,8 +2999,55 @@ select.sort-selection::-ms-expand
     color: #999;
 }
 
-.feedback-form input[type='text'],
-.feedback-form input[type='email'],
+.feedback-form input::-moz-placeholder,
+.feedback-form textarea::-moz-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.feedback-form input:-ms-input-placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.feedback-form textarea:-ms-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.feedback-form input::-ms-input-placeholder,
+.feedback-form textarea::-ms-input-placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #999;
+}
+
+
+.feedback-form input,
 .feedback-form textarea
 {
     font-size: 16px;
@@ -2900,15 +3079,13 @@ select.sort-selection::-ms-expand
     padding-left: 12px;
 
     color: #323232;
-    border: 1px solid rgba(5, 4, 4, 0.52);
+    border: 1px solid rgba(178, 178, 178, .52);
     border-radius: 5px;
     background-color: #fff;
 }
 
-.feedback-form input[type='text']:hover,
-.feedback-form input[type='text']:focus,
-.feedback-form input[type='email']:hover,
-.feedback-form input[type='email']:focus,
+.feedback-form input:hover,
+.feedback-form input:focus,
 .feedback-form textarea:hover,
 .feedback-form textarea:focus
 {
@@ -2931,7 +3108,7 @@ select.sort-selection::-ms-expand
 {
     position: absolute;
     right: 25px;
-    bottom: 27px;
+    bottom: 25px;
 
     width: 35%;
 }
