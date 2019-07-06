@@ -608,17 +608,6 @@ input[type='radio'].visually-hidden
     text-decoration: none;
 }
 
-.top-placeholder
-{
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 13px;
-
-    position: absolute;
-
-    opacity: 0;
-    color: #999;
-}
 
 .search a
 {
@@ -1563,25 +1552,21 @@ a.full-busket-link
 .map
 {
     margin-left: -25px;
+    width: 1200px;
+    
 }
 
 .map img
 {
+    max-width: 1200px;
     position: relative;
-
-    width: 1190px;
-    height: 415px;
-
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
 }
 
 .map-image-wrap
 {
     position: absolute;
-    bottom: 85px;
-    left: 600px;
+    bottom: 75px;
+    left: 2px;
 }
 
 .map::before
@@ -1607,8 +1592,8 @@ a.full-busket-link
     position: relative;
     z-index: 1;
 
-    width: 1200px;
-    height: 428px;
+    width: 100%;
+    height: 430px;
     margin-bottom: 10px;
 
     border: none;
@@ -1663,6 +1648,7 @@ a.full-busket-link
 .contacts a.contacts-phone
 {
     margin: 4px 0;
+    text-decoration: none;
 }
 
 .contacts p.contacts-text
@@ -1728,16 +1714,18 @@ a.full-busket-link
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    
 }
 
 .breadcrumbs li:not(:last-child)
 {
     margin-right: 20px;
+    position: relative;
 }
 
 .breadcrumbs a
 {
-    position: relative;
+   
 
     color: #fff;
 
@@ -1764,7 +1752,7 @@ a.full-busket-link
     border-bottom: none;
 }
 
-.breadcrumbs-item:not(:last-child) a::after
+.breadcrumbs:not(:last-child) li::after
 {
     position: absolute;
     right: -15px;
@@ -2036,14 +2024,6 @@ select.sort-selection::-ms-expand
     padding-right: 10px;
 }
 
-
-.filter-input:hover + label,
-.filter-input:focus + label,
-.filter-input:active + label
-{
-    opacity: 1;
-    color: #000;
-}
 .filter-input-radio + label::before
 {
     position: absolute;
@@ -2500,7 +2480,7 @@ select.sort-selection::-ms-expand
     display: flex;
 
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 0;
 
     -webkit-box-pack: justify;
@@ -2661,7 +2641,7 @@ select.sort-selection::-ms-expand
     font-weight: 400;
     line-height: 18px;
 
-    width: 189px;
+    width: 190px;
     height: 59px;
     margin: 0;
     padding-top: 4px;
@@ -2920,7 +2900,7 @@ select.sort-selection::-ms-expand
     padding-left: 12px;
 
     color: #323232;
-    border: 1px solid rgba(178, 178, 178, .52);
+    border: 1px solid rgba(5, 4, 4, 0.52);
     border-radius: 5px;
     background-color: #fff;
 }
