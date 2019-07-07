@@ -88,6 +88,60 @@
                      </svg>
                      2&nbsp;товара
                   </a>
+                  <section class="modal-busket">
+                     <h3 class="visually-hidden">Товары в корзине</h3>
+                     <form class="busket-form" action="http://echo.htmlacademy.ru" method="post">
+                        <table class="busket-content">
+                           <tr>
+                              <th class="visually-hidden">Удалить товар из корзины</th>
+                              <th class="visually-hidden">Изображение товара</th>
+                              <th class="visually-hidden">Название товара</th>
+                              <th class="visually-hidden">Цена за килограмм</th>
+                              <th class="visually-hidden">Общая стоимость товара</th>
+                           </tr>
+                           <tr class="item-1">
+                              <td class="delete">
+                                 <a class="button-delete-item" href="#" title="Удалить товар из корзины">
+                                    <span class="visually-hidden">Удалить товар из корзины</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                       <path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" />
+                                    </svg>
+                                 </a>
+                              </td>
+                              <td class="item-img">
+                                 <img class="" src="img/catalog/product-1.jpg" width="33" height="33" alt="Удалить товар из корзины">
+                              </td>
+                              <td class="item-name">Пломбир с апельсиновым джемом</td>
+                              <td class="item-quantity">1,5 кг х </td>
+                              <td class="item-price">200 руб.</td>
+                              <td class="item-cost">300 руб.</td>
+                           </tr>
+                           <tr class="item-2">
+                              <td class="delete">
+                                 <a class="button-delete-item" href="#" title="Удалить товар из корзины">
+                                    <span class="visually-hidden">Удалить товар из корзины</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                                       <path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" />
+                                    </svg>
+                                 </a>
+                              </td>
+                              <td class="item-img">
+                                 <img class="" src="img/catalog/product-3.jpg" width="33" height="33" alt="Удалить товар из корзины">
+                              </td>
+                              <td class="item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                              <td class="item-quantity">1,5 кг х </td>
+                              <td class="item-price">300 руб.</td>
+                              <td class="item-cost">450 руб.</td>
+                           </tr>
+                           <tr class="total">
+                              <td colspan="6">Итого: 750 руб.</td>
+                           </tr>
+                        </table>
+                        <button class="button busket-button" type="submit">
+                        Оформить заказ
+                        </button>
+                     </form>
+                  </section>
                </li>
             </ul>
          </nav>
@@ -460,60 +514,5 @@
             </div>
          </div>
       </footer>
-      <section class="modal modal-busket">
-         <h3 class="visually-hidden">Товары в корзине</h3>
-         <form class="busket-form" action="http://echo.htmlacademy.ru" method="post">
-            <table class="busket-content">
-               <tr>
-                  <th class="visually-hidden">Удалить товар из корзины</th>
-                  <th class="visually-hidden">Изображение товара</th>
-                  <th class="visually-hidden">Название товара</th>
-                  <th class="visually-hidden">Цена за килограмм</th>
-                  <th class="visually-hidden">Общая стоимость товара</th>
-               </tr>
-               <tr class="item-1">
-                  <td class="delete">
-                     <a class="button-delete-item" href="#" title="Удалить товар из корзины">
-                        <span class="visually-hidden">Удалить товар из корзины</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
-                           <path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" />
-                        </svg>
-                     </a>
-                  </td>
-                  <td class="item-img">
-                     <img class="" src="img/catalog/product-1.jpg" width="33" height="33" alt="Удалить товар из корзины">
-                  </td>
-                  <td class="item-name">Пломбир с апельсиновым джемом</td>
-                  <td class="item-quantity">1,5 кг х </td>
-                  <td class="item-price">200 руб.</td>
-                  <td class="item-cost">300 руб.</td>
-               </tr>
-               <tr class="item-2">
-                  <td class="delete">
-                     <a class="button-delete-item" href="#" title="Удалить товар из корзины">
-                        <span class="visually-hidden">Удалить товар из корзины</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
-                           <path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z" />
-                        </svg>
-                     </a>
-                  </td>
-                  <td class="item-img">
-                     <img class="" src="img/catalog/product-3.jpg" width="33" height="33" alt="Удалить товар из корзины">
-                  </td>
-                  <td class="item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="item-quantity">1,5 кг х </td>
-                  <td class="item-price">300 руб.</td>
-                  <td class="item-cost">450 руб.</td>
-               </tr>
-               <tr class="total">
-                  <td colspan="6">Итого: 750 руб.</td>
-               </tr>
-            </table>
-            <button class="button busket-button" type="submit">
-            Оформить заказ
-            </button>
-         </form>
-      </section>
-      <div class="modal-overlay"></div>
    </body>
 </html>

@@ -1022,6 +1022,177 @@ a.full-busket-link
     opacity: 1;
 }
 
+.modal-busket
+{
+    position: absolute;
+    top: 38px;
+    right: -1px;
+    z-index: 2;
+    display: none;
+    width: 539px;
+  
+    padding-top: 20px;
+    padding-right: 14px;
+    padding-bottom: 19px;
+    padding-left: 17px;
+
+    border-radius: 5px;
+    border: 1px solid #d3d3d2;
+    background-color: #f8f7f4;
+    -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
+            box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
+}
+
+.full-busket:hover .modal-busket
+{
+    display: block;
+}
+
+.item-1 .button-delete-item
+{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+
+    width: 11px;
+    height: 11px;
+    padding: 0;
+
+    border: none;
+    background-color: #f8f7f4;
+}
+
+.item-2 .button-delete-item
+{
+    position: absolute;
+    top: 84px;
+    left: 20px;
+
+    width: 11px;
+    height: 11px;
+    padding: 0;
+
+    border: none;
+    background-color: #f8f7f4;
+}
+
+.busket-content
+{
+    margin-bottom: 15px;
+}
+
+.busket-content tr
+{
+    display: block;
+}
+
+.busket-content td
+{
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+.item-img
+{
+    padding-right: 11px;
+    padding-left: 20px;
+}
+
+.item-1 .item-img
+{
+    margin-top: -8px;
+}
+
+.item-2 .item-img
+{
+    margin-top: -9px;
+}
+
+.item-img img
+{
+    border-radius: 50%;
+}
+
+.item-name
+{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+
+    width: 230px;
+    margin-right: 32px;
+}
+
+.item-price
+{
+    margin-right: 29px;
+    margin-left: -3px;
+
+    color: #999;
+}
+
+.item-1
+{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+
+    margin-bottom: 21px;
+    padding-top: 6px;
+
+    color: #323232;
+}
+
+.item-2
+{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+
+    margin-bottom: 29px;
+    padding-top: 2px;
+
+    color: #323232;
+}
+
+.total
+{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+
+    margin-right: -20px;
+    margin-bottom: 50px;
+
+    text-align: right;
+
+    color: #323232;
+}
+
+.total:before
+{
+    position: absolute;
+    bottom: 115px;
+    left: 16px;
+
+    width: 540px;
+    height: 1px;
+
+    content: '';
+
+    background-color: #cacac7;
+}
+
+.busket-button
+{
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
+
+    cursor: pointer;
+}
+
 .main-header-logo
 {
     width: 154px;
@@ -3127,172 +3298,3 @@ select.sort-selection::-ms-expand
     width: 35%;
 }
 
-.modal-busket
-{
-    position: absolute;
-    top: 55px;
-    right: 25px;
-
-    display: none;
-
-    width: 539px;
-    padding-top: 20px;
-    padding-right: 14px;
-    padding-bottom: 19px;
-    padding-left: 17px;
-
-    border: 1px solid #d3d3d2;
-    background-color: #f8f7f4;
-    -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
-            box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
-}
-
-.full-busket:hover .modal-busket
-{
-    display: block;
-}
-
-.item-1 .button-delete-item
-{
-    position: absolute;
-    top: 30px;
-    left: 20px;
-
-    width: 11px;
-    height: 11px;
-    padding: 0;
-
-    border: none;
-    background-color: #f8f7f4;
-}
-
-.item-2 .button-delete-item
-{
-    position: absolute;
-    top: 84px;
-    left: 20px;
-
-    width: 11px;
-    height: 11px;
-    padding: 0;
-
-    border: none;
-    background-color: #f8f7f4;
-}
-
-.busket-content
-{
-    margin-bottom: 15px;
-}
-
-.busket-content tr
-{
-    display: block;
-}
-
-.busket-content td
-{
-    display: inline-block;
-
-    vertical-align: top;
-}
-
-.item-img
-{
-    padding-right: 11px;
-    padding-left: 20px;
-}
-
-.item-1 .item-img
-{
-    margin-top: -8px;
-}
-
-.item-2 .item-img
-{
-    margin-top: -9px;
-}
-
-.item-img img
-{
-    border-radius: 50%;
-}
-
-.item-name
-{
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 16px;
-
-    width: 230px;
-    margin-right: 32px;
-}
-
-.item-price
-{
-    margin-right: 29px;
-    margin-left: -3px;
-
-    color: #999;
-}
-
-.item-1
-{
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 16px;
-
-    margin-bottom: 21px;
-    padding-top: 6px;
-
-    color: #323232;
-}
-
-.item-2
-{
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 16px;
-
-    margin-bottom: 29px;
-    padding-top: 2px;
-
-    color: #323232;
-}
-
-.total
-{
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 18px;
-
-    margin-right: -20px;
-    margin-bottom: 50px;
-
-    text-align: right;
-
-    color: #323232;
-}
-
-.total:before
-{
-    position: absolute;
-    bottom: 115px;
-    left: 16px;
-
-    width: 510px;
-    height: 1px;
-
-    content: '';
-
-    background-color: #cacac7;
-}
-
-.busket-button
-{
-    position: absolute;
-    right: 15px;
-    bottom: 25px;
-
-    cursor: pointer;
-}
